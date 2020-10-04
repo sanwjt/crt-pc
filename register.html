@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-04 14:17:52
- * @LastEditTime: 2020-10-04 17:39:20
+ * @LastEditTime: 2020-10-04 22:02:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/login.html
@@ -12,21 +12,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=s, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
 </head> 
 <body>
     <!-- 顶部 -->
     <div class="header">
-        <div class="content">
-            <div class="logo"></div>
+        <div class="header_content">
+            <div class="header_logo">logo</div>
+            <h3>CTR调研社区</h3>
+            <ul class="header_nav">
+                <li class="active">问卷</li>
+                <li>资讯</li>
+                <li>活动</li>
+                <li>抽奖</li>
+                <li>兑换</li>
+                <li>我的</li>
+            </ul>
+            <div class="header_message">
+                <div class="header_num ">2</div>
+            </div>
         </div>
     </div>
     <!-- 内容 -->
     <div class="main_box">
         <div class="main">
+            <p class="register_title">注册用户</p>
+            <div class="register_form">
+                <div class="register_form_left">
+                    <div class="register_form_title">用户123456，您好</div>
 
+                    <input class="common_input mb20" type="text" placeholder="请输入您的手机号码">
+
+                    <div class="verification-button mb20">
+                        <div class="verification-text">点击此处进行验证</div>
+                    </div>
+
+                    <div class="mb20 pr" style="width: 499px;">
+                        <input class="common_input" type="text" placeholder="请输入手机验证码">
+                        <div class="lock-btn">获取验证码</div>
+                    </div>
+
+                    <input class="common_input mb20" type="text" placeholder="请输入密码">
+
+                    <input class="common_input mb20" type="text" placeholder="请再次输入密码">
+                </div>
+
+                <div class="register_form_right">
+                    <div class="register_form_title">* 请认真填写下面基本信息,以保证您能更多的完成商业调查,获取奖励。</div>
+                    <div class="oh">
+                        <div class="fl">
+                            <div class="origin-btn" style="width: 280px;">立即注册</div>
+                        </div>
+                        <div class="fr">
+                            <div class="green-btn" style="width: 280px;">已经是老用户？立即登录</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- 底部 -->
