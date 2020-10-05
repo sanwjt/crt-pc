@@ -1,14 +1,85 @@
 html,body,.container{width: 100%;height: 100%;font-size: 18px;}
+.theme-color{color:#FF8721}
+.fl{float: left;}
+.fr{float: right;}
+*{margin:0;padding:0;}
+input{
+    border: none;
+  }
+ul li{list-style: none;}
 .wrapper{position: relative;background: blue;}
 .indexbg{width: 100%;height: 100%;margin-top:130px;background: url(../img/index-bg.jpg) no-repeat;background-size: 100% 100%; }
-/* .content{width: 100%;height: 100%;position: absolute;left: 0;top:0;background: yellowgreen;} */
+/* 登录 */
+.indexBox{position: relative;width: 100%;height: 1000px;background: blue;}
+.indexLeft{margin-top:262px;float:left;font-size: 42px;color:#fff;letter-spacing:2.33px}
+.fz-big{font-size: 50px;color:#fff;}
+.loginBox{float:right;margin-top:168px;width: 480px;height: 590px;background:rgb(255, 255, 255,0.6);box-sizing: border-box;padding: 36px 42px 43px;}
+.loginBox .welcome{color: #FF8721;font-size: 40px;margin-bottom: 48px;}
+.login-title{overflow: hidden;width: 100%;margin-bottom: 32px;}
+.icon-fg{margin:0 5px;}
+.login-content p{margin-bottom: 20px;}
 
-/* .header{height: 130px;line-height: 130px;overflow: inherit;z-index: 3;background: pink;}
-.header ul{width: 1200px;margin: 0 auto;background: yellowgreen;display: flex;justify-content:space-between;overflow: hidden;}
-.header .logo{width: 60px;height: 60px;background: orange;} */
+.login-left p{display: inline-block;}
 
-/* .footer{font-size: 14px;color:#fff;position: absolute;bottom: 20px;} */
-
-/* .main{width: 100%;height: 100%;background: url(../img/index-bg.jpg) no-repeat;background-size: 100% 100%;} */
+.inputbox{width: 396px;height: 60px;line-height: 60px;font-size: 16px;padding-left: 21px;box-sizing: border-box;}
 .login{width: 480px;height: 590px;background: olivedrab;position: absolute;top: 168px;right: 197px;}
+.login-btn{width: 396px;height: 60px;line-height: 60px;font-size: 16px;background: #999999;color: #fff;}
+.icon-bottom{text-align: left;width: 396px;overflow: hidden;}
+.icon-list li{display: inline-block;vertical-align: middle;margin:0 0 0 17px;width: 40px;height: 40px}
+.icon-list li img{width:100%;display: inline-block;}
 /* 注册 */
+/* 抽奖 */
+.choujiang-banner{margin-bottom: 36px;}
+.choujiang-banner img{width: 100%;display: block;}
+.choujiang-game{width: 570px;height: 697px;background: url(../img/game.png) no-repeat;background-size: 100% 100%;}
+.choujiang-content{width: 1200px;height: 796px;background: #FFC15D;margin:0 auto;border-radius:10px;box-sizing: border-box;padding:36px 28px 23px;margin-bottom: 32px; -moz-box-sizing: content-box; -webkit-box-sizing: content-box;-o-box-sizing: content-box;-ms-box-sizing: content-box; }
+.choujiang-content h5{color: #F14955;font-size: 20px;margin-bottom: 12px;}
+.choujiang-namelist{width: 570px;height: 698px;background-color: #FFF6D9;border-radius: 21px;box-sizing: border-box;padding:29px 66px 23px 40px;}
+.choujiang-namelist li{margin-bottom: 17px;}
+.choujiang-rule {font-size: 16px;}
+.choujiang-rule h5{font-size: 20px;margin-bottom: 36px;}
+/* 抽奖弹窗 */
+.fixed{position: fixed;width: 100%;height: 100%;background: rgb(0, 0, 0,0.6);z-index: 11;left: 0;top:0;}
+.fixed-inner{font-size: 18px;color: #666;background: #fff;text-align: center;}
+.use-up{padding:85px 71px;}
+.old-user{padding:85px 151px 80px;}
+.icon-close{position: absolute;width: 20px;height: 20px;top:19px;right: 19px;}
+.btn{padding:16px 43px;background: #FF8721;color: #fff;}
+.no-prize{padding:85px 141px 111px;}
+.cel-prize{padding:85px 190px 110px;}
+.prize-form{padding:85px 51px 45px;font-size: 16px;color: #999;}
+.prize-form h6{font-size: 18px;color: #666;}
+.prize-tips{font-size: 14px;text-align: left;}
+.prize-input{margin-bottom: 20px;}
+.prize-input input{width: 499px;height: 60px;border: 1px solid #ccc;padding-left: 21px;-moz-box-sizing: content-box; -webkit-box-sizing: content-box;-o-box-sizing: content-box;-ms-box-sizing: content-box; }
+/* 反馈 */
+.fankui-banner{margin-bottom: 36px;}
+.fankui-banner img{width: 100%;display: block;}
+.fankui-bread{font-size: 18px;color: #666;margin-bottom: 26px;}
+.icon-cut{margin:0 8px;}
+.fankui-breadnow{font-size: 22px;}
+.fankui-list{width: 1200px;height: 477px;border:1px solid #ccc;box-sizing: border-box;padding:24px;position: relative;font-size: 14px;color: #333;}
+.avtar{width: 65px;height: 65px;background:orange;border-radius: 50%;margin-right: 12px;}
+.fankui-img{overflow: hidden;}
+.fankui-img li{width: 79px;height: 79px;background: orange;float: left;margin-right: 20px;}
+.date{font-size: 14px;color: #757575;}
+.fankui-answer{background: #FFEDD1;padding:20px 0 20px 14px;position: relative;overflow: hidden;}
+.icon-answer{position: absolute;right: 11px;top:11px;}
+.fankui-name{color: #757575;margin-bottom: 8px;}
+.fankui-tips{font-size:16px;margin-bottom: 20px;}
+.fankui-message{margin-bottom: 12px;}
+.fankui-img{margin-bottom: 12px;}
+.answer-avtar{margin-right: 12px;}
+.answer-description{margin-bottom: 12px;}
+
+/* 搜索 */
+.search-banner{margin-bottom: 36px;}
+.search-bar{width: 515px;height: 60px;line-height: 60px;border-radius: 30px;border:1px solid red;position: relative;}
+/* .search-bar input{width: 515px;height: 60px;line-height: 60px;padding-left: 28px;box-sizing: border-box;} */
+.icon-search{width: 24px;height: 24px;vertical-align: middle;position: absolute;right: 28px;top: 20px;}
+.search-banner img{width: 100%;display: block;}
+.search-title{margin-bottom: 65px;}
+.search-box{overflow: hidden;}
+.search-box li{float: left;width: 78px;height: 78px;margin-right: 140px;}
+.search-question{width: 1200px;height: 283px;border:1px solid #E5E5E5}
+.search-question h6{width: 100%;height: 52px;line-height: 52px;background:#F7F7F7;font-size: 16px;text-align: center;color:#666;}
