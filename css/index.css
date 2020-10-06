@@ -94,3 +94,6 @@ ul li{list-style: none;}
 
 /* 问卷-甄别 */
 .fixed-bar{position: absolute;right: 0;bottom: 0;}
+
+/* 资讯 */
+.zixun-banner{margin-bottom: 36px;}
