@@ -95,6 +95,33 @@
 }
 
 
+.footer ul{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer li{
+    color: #E5E5E5;
+    font-size: 16px;
+    font-weight: 400;
+    float: left;
+    margin-right: 146px;
+}
+
+
+.footer li:last-child{
+    margin-right: 0;
+}
+
+.footer div{
+    font-weight: 400;
+    font-size: 14px;
+    color: #E5E5E5;
+    text-align: center;
+}
+
+
 .common_input::-webkit-input-placeholder { 
 /* WebKit browsers */ 
 color:#999;
@@ -110,6 +137,31 @@ color:#999;
 .common_input:-ms-input-placeholder { 
 /* Internet Explorer 10+ */ 
 color:#999;
+}
+
+.common_form_item{
+    height: 60px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.common_form_label{
+    width: 80px;
+    height: 22px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #707070;
+    line-height: 22px;
+    display: inline-block;
+}
+
+.common_form_error{
+    font-size: 14px;
+    color:#F14955;
+    padding-left: 18px;
+    height: 20px;
+    line-height: 20px;
 }
 
 .common_input{
@@ -193,9 +245,22 @@ color:#999;
     margin-bottom: 20px;
 }
 
+.mt20{
+    margin-top: 20px;
+}
+
 .pr{
     position: relative;
 }
+
+.pa{
+    position: absolute;
+}
+
+.bt0{
+    bottom: 0;
+}
+
 .oh{
     overflow: hidden;
 }
@@ -204,4 +269,8 @@ color:#999;
 }
 .fr{
     float: right;
+}
+
+.dib{
+    display: inline-block;
 }

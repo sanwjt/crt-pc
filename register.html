@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-04 14:17:52
- * @LastEditTime: 2020-10-04 22:02:42
+ * @LastEditTime: 2020-10-04 23:31:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/login.html
@@ -36,14 +36,17 @@
         </div>
     </div>
     <!-- 内容 -->
-    <div class="main_box">
+    <div class="main_box" style="margin-bottom: 218px;">
         <div class="main">
             <p class="register_title">注册用户</p>
             <div class="register_form">
                 <div class="register_form_left">
                     <div class="register_form_title">用户123456，您好</div>
 
-                    <input class="common_input mb20" type="text" placeholder="请输入您的手机号码">
+                    <div class="pr">
+                        <input class="common_input mb20" type="text" placeholder="请输入您的手机号码">
+                        <p class="common_form_error bt0 pa">手机号码不得为空！/该手机号码已注册/手机号码填写格式不正确！</p>
+                    </div>
 
                     <div class="verification-button mb20">
                         <div class="verification-text">点击此处进行验证</div>
@@ -54,13 +57,28 @@
                         <div class="lock-btn">获取验证码</div>
                     </div>
 
-                    <input class="common_input mb20" type="text" placeholder="请输入密码">
-
-                    <input class="common_input mb20" type="text" placeholder="请再次输入密码">
+                    <div class="pr">
+                        <input class="common_input mb20" type="text" placeholder="请输入密码">
+                        <p class="common_form_error bt0 pa">您的密码过于简单，建议修改/请输入6~16位密码/密码不得为空</p>
+                    </div>
+                    
+                    <div class="pr">
+                        <input class="common_input mb20" type="text" placeholder="请再次输入密码">
+                        <p class="common_form_error bt0 pa">密码输入不一致</p>
+                    </div>
                 </div>
 
                 <div class="register_form_right">
                     <div class="register_form_title">* 请认真填写下面基本信息,以保证您能更多的完成商业调查,获取奖励。</div>
+
+                    <div class="common_form_item mb20">
+                        <div class="common_form_label">出生年月：</div>
+                        <div class="pr dib">
+                          <input class="common_input mb20" type="text" placeholder="请再次输入密码">
+                          <p class="common_form_error bt0 pa">生日不得为空</p>
+                        </div>
+                    </div>
+
                     <div class="oh">
                         <div class="fl">
                             <div class="origin-btn" style="width: 280px;">立即注册</div>
@@ -75,8 +93,16 @@
     </div>
     <!-- 底部 -->
     <div class="footer_box">
-        <div class="footer">
-
+        <div class="footer mb20">
+            <ul class="mb20">
+                <li>用户协议</li>
+                <li>隐私政策</li>
+                <li>联系我们</li>
+                <li>关注我们</li>
+                <li>微博</li>
+                <li>CTR调研社区</li>
+            </ul>
+            <div>© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
         </div>
     </div>    
 </body>
