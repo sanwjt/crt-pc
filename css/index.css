@@ -84,19 +84,20 @@ ul li{list-style: none;}
 .prize-form h6{font-size: 18px;color: #666;}
 .prize-tips{font-size: 14px;text-align: left;}
 .prize-input{margin-bottom: 20px;}
-.prize-input input{width: 499px;height: 60px;border: 1px solid #ccc;padding-left: 21px;-moz-box-sizing: content-box; -webkit-box-sizing: content-box;-o-box-sizing: content-box;-ms-box-sizing: content-box; }
+.prize-input input{width: 499px;height: 60px;border: 1px solid #ccc;padding-left: 21px;}
 /* 反馈 */
 .fankui-banner{margin-bottom: 36px;}
 .fankui-banner img{width: 100%;display: block;}
 .fankui-bread{font-size: 18px;color: #666;margin-bottom: 26px;}
 .icon-cut{margin:0 8px;}
 .fankui-breadnow{font-size: 22px;}
-.fankui-list{width: 1200px;height: 477px;border:1px solid #ccc;box-sizing: border-box;padding:24px;position: relative;font-size: 14px;color: #333;}
+.fankui-list{width: 1200px;font-size: 14px;color: #333;overflow: hidden;}
+.fankui-list li{border:1px solid #ccc;box-sizing: border-box;padding:24px 0 24px 31px;position: relative;overflow: hidden;margin-bottom: 24px;}
 .avtar{width: 65px;height: 65px;background:orange;border-radius: 50%;margin-right: 12px;}
 .fankui-img{overflow: hidden;}
 .fankui-img li{width: 79px;height: 79px;background: orange;float: left;margin-right: 20px;}
 .date{font-size: 14px;color: #757575;}
-.fankui-answer{background: #FFEDD1;padding:20px 0 20px 14px;position: relative;overflow: hidden;}
+.fankui-answer{background: #FFEDD1;padding:20px 20px 20px 14px;position: relative;overflow: hidden;}
 .icon-answer{position: absolute;right: 11px;top:11px;}
 .fankui-name{color: #757575;margin-bottom: 8px;}
 .fankui-tips{font-size:16px;margin-bottom: 20px;}
@@ -128,92 +129,6 @@ ul li{list-style: none;}
 /* 问卷-甄别 */
 .fixed-bar{position: absolute;right: 0;bottom: 0;}
 
-/* 资讯 */
-.advertisement{
-    width: 100%;
-    background-color: burlywood;
-}
-.advertisement-content {
-    width: 1200px;
-    margin: 0 auto;
-    height: 220px;
-    background-color: #FF8721;
-}
-
-.info_list .info_item{
-    overflow: hidden;
-    padding-bottom: 18px;
-    border-bottom: 1px dashed #E5E5E5;
-    margin-bottom: 18px;
-}
-.info_box .info_title{
-    font-size: 16px;
-    font-weight: 600;
-    color: #333333;
-    line-height: 22px;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
-}
-
-.info_box p{
-    font-size: 16px;
-    font-weight: 400;
-    color: #333333;
-    line-height: 22px;
-    letter-spacing: 1px;
-}
-
-.info_item.hasimg .info_box{
-    width: 825px;
-}
-
-.info_item .info_item_img{
-    width: 352px;
-    height: 150px;
-    background-color: #FF8721;
-}
-
-.info_item .info_item_imgbox{
-    vertical-align: top;
-    margin-right: 16px;
-}
-
-.info_box .info_item_detail{
-    overflow: hidden;
-    margin-top: 12px;
-    line-height: 20px;
-}
-
-.info_box .info_time{
-    float: left;
-    color: #666666;
-    line-height: 20px;
-    letter-spacing: 1px;
-    font-size: 14px;
-}
-
-.info_box .info_share{
-    float: right;
-    color: #666666;
-    line-height: 20px;
-    letter-spacing: 1px;
-    font-size: 14px;
-}
-.info_box .info_share_list{
-    overflow: hidden;
-    vertical-align: middle;
-}
-.info_box .info_share_list li{
-    float: left;
-    width: 20px;
-    height: 20px;
-    margin-right: 13px;
-}
-
-.info_box .info_share_list li img{
-    width: 100%;
-    height: 100%;
-}
 
 /* 关联已有账号 */
 
@@ -261,3 +176,16 @@ ul li{list-style: none;}
     font-weight: 400;
     text-align: center;
 }
+.zixun-banner{margin-bottom: 36px;}
+.zixun-banner img{width: 100%;display: block;}
+.zixun-content{font-size: 16px;}
+.zixun-ads{width: 352.82px;height: 150px;background: orange;float: left;margin-right: 20px;}
+.zixun-info{width: 800px;float: left;}
+.zixun-p1{color: #333;font-weight: bold;margin-bottom: 12px;}
+.zixun-p2{margin-bottom: 6px;}
+.zixun-list{overflow: hidden;}
+.zixun-list li{overflow: hidden;padding:25px 0 19px;border-bottom: 1px dashed #E5E5E5;}
+.share-box{float: right;}
+.share-wz{float: left;}
+.share-icons{float: left;}
+.share-icons li{float: left;padding:0;border:none;margin-right: 13px;}
