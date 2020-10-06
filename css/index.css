@@ -89,6 +89,7 @@ ul li{list-style: none;}
 .fankui-banner{margin-bottom: 36px;}
 .fankui-banner img{width: 100%;display: block;}
 .fankui-bread{font-size: 18px;color: #666;margin-bottom: 26px;}
+.wenquan-big{font-size: 22px;}
 .icon-cut{margin:0 8px;}
 .fankui-breadnow{font-size: 22px;}
 .fankui-list{width: 1200px;font-size: 14px;color: #333;overflow: hidden;}
@@ -120,27 +121,38 @@ ul li{list-style: none;}
 .search-question h6{width: 100%;height: 52px;line-height: 52px;background:#F7F7F7;font-size: 16px;text-align: center;color:#666;}
 .search-question ul li ul{float: left;}
 /* 搜索结果 */
-.search-resultbox{width: 1200px;margin:0 auto;overflow: hidden;}
-.result-left{width: 200px;background: #F7F7F7;font-size: 16px;color: #707070;}
+.search-resultbox{width: 1200px;margin:0 auto;overflow: hidden;font-size: 16px;}
+.result-left{width: 200px;background: #F7F7F7;font-size: 16px;color: #707070;font-size: 16px;line-height: 30px;}
 .result-right{width: 1000px;}
 .result-question{padding:27px 17px 17px;background: #F7F7F7;}
 .question-inner{padding:12px 15px;background: #fff;}
+.search-resultlist li{margin: 20px 0;}
+.question-inner{color: #333;margin-bottom: 16px;}
+.search-btnbox{text-align: center;margin-top: 10px;}
+.search-btnbox li{width: 140px;height: 48px;line-height: 48px;text-align: center;color: #fff;display: inline-block;margin-right: 151px;}
+.red-btn{background: #F14955;}
+.ori-btn{background: #FF8721;}
 
 /* 问卷-甄别 */
 .fixed-bar{position: absolute;right: 0;bottom: 0;}
 /* 问卷-正在进行 */
-.wenquan-bread{font-size: 18px;color:#666;}
+.wenquan-bread{font-size: 18px;margin-bottom: 32px;}
 .wenquan-breadnow{font-size: 22px;}
-.wenquan-bread {font-size: 18px;color:#666}
-.wenquaning-list {text-align: left;}
-.wenquaning-list li{width: 378px;height: 315px;background: #f7f7f7;position: relative;display: inline-block;margin-right: 16px;}
+/* 进行时1 */
+.wenquaning-list1 {text-align: left;}
+.wenquaning-list1 li{width: 346px;height: 407px;background: #fff;position: relative;display: inline-block;margin-right: 40px;}
+.wenquaning1-info{padding:34px 14px 20px;font-size: 18px;text-align: center;}
+/* 进行时2 */
+.wenquaning-list2 {text-align: left;}
+.wenquaning-list2 li{width: 378px;height: 315px;background: #f7f7f7;position: relative;display: inline-block;margin-right: 16px;}
 .icon-douh{position: absolute;left: 16px;top:21px;}
 .wenquaning-right{position: absolute;top: 0;right: 0;}
 .wenquaning-info{position: absolute;width: 342px;top: 77px;left: 16px;}
 .num{font-size: 48px;margin-bottom: 12px;}
 .wenquaning-tips{font-size: 18px;margin-bottom: 12px;}
-.date-time{margin-bottom: 30px;}
-.wenquaning-btn{width: 177px;height: 43px;line-height: 43px;background:#FF8721;color:#fff;border-radius: 21px;text-align: center;}
+.date-time{margin-bottom: 30px;font-size: 14px;color:#666;}
+.wenquaning-btn{margin:20px auto 0;width: 177px;height: 43px;line-height: 43px;background:#FF8721;color:#fff;border-radius: 21px;text-align: center;}
+/* .icon-canyu{margin-right: 14px;} */
 
 /* 关联已有账号 */
 
@@ -201,3 +213,6 @@ ul li{list-style: none;}
 .share-wz{float: left;}
 .share-icons{float: left;}
 .share-icons li{float: left;padding:0;border:none;margin-right: 13px;}
+
+/* 活动 */
+.activity-content img{width: 100%;display: block;}
