@@ -274,3 +274,7 @@ color:#999;
 .dib{
     display: inline-block;
 }
+
+.margin_center{
+    margin: 0 auto;
+}
