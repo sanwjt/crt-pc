@@ -28,6 +28,39 @@ ul li{list-style: none;}
 .icon-list li{display: inline-block;vertical-align: middle;margin:0 0 0 17px;width: 40px;height: 40px}
 .icon-list li img{width:100%;display: inline-block;}
 /* 注册 */
+.register_title{
+    font-size: 22px;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 82px;
+    margin-bottom: 78px;
+}
+
+.register_form{
+    overflow: hidden;
+}
+
+.register_form .register_form_left{
+    display: inline-block;
+    width: 50%; 
+    float: left;
+}
+
+.register_form .register_form_right{
+    display: inline-block;
+    width: 50%; 
+    float: right;
+}
+
+.register_form_title{
+    font-size: 18px;
+    font-weight: 400;
+    color: #FF8721;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+
 /* 抽奖 */
 .choujiang-banner{margin-bottom: 36px;}
 .choujiang-banner img{width: 100%;display: block;}
@@ -94,6 +127,9 @@ ul li{list-style: none;}
 
 /* 问卷-甄别 */
 .fixed-bar{position: absolute;right: 0;bottom: 0;}
+<<<<<<< HEAD
 
 /* 资讯 */
 .zixun-banner{margin-bottom: 36px;}
+=======
+>>>>>>> 169efcfd658604a732c158f573a29dbbb02a4c86
