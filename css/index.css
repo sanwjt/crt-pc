@@ -127,9 +127,10 @@ ul li{list-style: none;}
 
 /* 问卷-甄别 */
 .fixed-bar{position: absolute;right: 0;bottom: 0;}
-<<<<<<< HEAD
 
 /* 资讯 */
 .zixun-banner{margin-bottom: 36px;}
-=======
->>>>>>> 169efcfd658604a732c158f573a29dbbb02a4c86
+.zixun-banner img{width: 100%;display: block;}
+.zixun-ads{width: 352.82px;height: 150px;background: orange;}
+.zixun-list{border-bottom: 1px dashed #E5E5E5;padding:22px 0 20px;overflow: hidden;}
+.zixun-list li{float: left;margin-right: 13px;}
