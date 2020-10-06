@@ -132,7 +132,8 @@ ul li{list-style: none;}
 .wenquan-bread{font-size: 18px;color:#666;}
 .wenquan-breadnow{font-size: 22px;}
 .wenquan-bread {font-size: 18px;color:#666}
-.wenquaning-list li{width: 378px;height: 315px;background: #f7f7f7;position: relative;}
+.wenquaning-list {text-align: left;}
+.wenquaning-list li{width: 378px;height: 315px;background: #f7f7f7;position: relative;display: inline-block;margin-right: 16px;}
 .icon-douh{position: absolute;left: 16px;top:21px;}
 .wenquaning-right{position: absolute;top: 0;right: 0;}
 .wenquaning-info{position: absolute;width: 342px;top: 77px;left: 16px;}
