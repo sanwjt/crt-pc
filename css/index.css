@@ -128,7 +128,18 @@ ul li{list-style: none;}
 
 /* 问卷-甄别 */
 .fixed-bar{position: absolute;right: 0;bottom: 0;}
-
+/* 问卷-正在进行 */
+.wenquan-bread{font-size: 18px;color:#666;}
+.wenquan-breadnow{font-size: 22px;}
+.wenquan-bread {font-size: 18px;color:#666}
+.wenquaning-list li{width: 378px;height: 315px;background: #f7f7f7;position: relative;}
+.icon-douh{position: absolute;left: 16px;top:21px;}
+.wenquaning-right{position: absolute;top: 0;right: 0;}
+.wenquaning-info{position: absolute;width: 342px;top: 77px;left: 16px;}
+.num{font-size: 48px;margin-bottom: 12px;}
+.wenquaning-tips{font-size: 18px;margin-bottom: 12px;}
+.date-time{margin-bottom: 30px;}
+.wenquaning-btn{width: 177px;height: 43px;line-height: 43px;background:#FF8721;color:#fff;border-radius: 21px;text-align: center;}
 
 /* 关联已有账号 */
 
