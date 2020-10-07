@@ -121,10 +121,13 @@ ul li{list-style: none;}
 .search-question h6{width: 100%;height: 52px;line-height: 52px;background:#F7F7F7;font-size: 16px;text-align: center;color:#666;}
 .search-question ul li ul{float: left;}
 /* 搜索结果 */
+.result-titleleft{height: 52px;background: #F9F9F9;line-height: 52px;padding-left: 20px;}
+.result-titleright{height: 52px;background: #F9F9F9;line-height: 52px;}
 .search-resultbox{width: 1200px;margin:0 auto;overflow: hidden;font-size: 16px;}
-.result-left{width: 200px;background: #F7F7F7;font-size: 16px;color: #707070;font-size: 16px;line-height: 30px;}
-.result-right{width: 1000px;}
+.result-left{width: 180px;background: #F7F7F7;font-size: 16px;color: #707070;font-size: 16px;line-height: 30px;padding:16px 0 139px 20px;}
+.result-right{width: 968px;padding-left: 32px;}
 .result-question{padding:27px 17px 17px;background: #F7F7F7;}
+.result-question p{text-align: center;}
 .question-inner{padding:12px 15px;background: #fff;}
 .search-resultlist li{margin: 20px 0;}
 .question-inner{color: #333;margin-bottom: 16px;}
