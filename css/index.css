@@ -189,3 +189,90 @@ ul li{list-style: none;}
 .share-wz{float: left;}
 .share-icons{float: left;}
 .share-icons li{float: left;padding:0;border:none;margin-right: 13px;}
+
+/* 验证 */
+.yanzheng_box{
+    width: 540px;
+    margin: 0 auto;
+    margin-top: 165px;
+}
+.set_box{
+    overflow: hidden;
+}
+.set_box div{
+    float: left;
+}
+.set_box .set_num{
+    width: 70px;
+    height: 82px;
+    font-size: 16px;
+    color: #707070;
+}
+
+.set_box .set_line{
+    width: 121px;
+    border:1px dashed #CCCCCC;
+    margin-top: 20px;
+}
+
+.set_box .set_line.active{
+    border-color: #FF8721;
+}
+
+
+.set_box .set_num.active{
+    color: #FF8721;
+}
+
+.set_box .set_num_icon{
+    width: 37px;
+    height: 44px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.set_box .set_num_icon.default{
+    background: url(../img/set1current.png) no-repeat;
+    background-size: contain;
+}
+
+.set_box .set_num_icon.default2{
+    background: url(../img/set2default.png) no-repeat;
+    background-size: contain;
+}
+
+.set_box .set_num_icon.current2{
+    background: url(../img/set2current.png) no-repeat;
+    background-size: contain;
+}
+
+.set_box .set_num_icon.default3{
+    background: url(../img/set3default.png) no-repeat;
+    background-size: contain;
+}
+
+.yanzheng-btn{
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    background-color:#FF8721;
+    color:#fff;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    right: 12px;
+    top:50%;
+    margin-top: -19px;
+    cursor: pointer;
+}
+.yanzheng_phone{
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
