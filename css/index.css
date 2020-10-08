@@ -142,8 +142,8 @@ ul li{list-style: none;}
 .wenquan-bread{font-size: 18px;margin-bottom: 32px;}
 .wenquan-breadnow{font-size: 22px;}
 /* 进行时1 */
-.wenquaning-list1 {text-align: left;margin-right: -40px;}
-.wenquaning-list1 li{width: 346px;height: 407px;background: #fff;position: relative;display: inline-block;margin-right: 40px;}
+.wenquaning-list1 {text-align: left;margin-right: -80px;}
+.wenquaning-list1 li{width: 346px;height: 407px;background: #fff;position: relative;float: left;;margin-right: 80px;}
 .wenquaning1-info{padding:34px 14px 20px;font-size: 18px;text-align: center;}
 /* 进行时2 */
 .wenquaning-list2 {text-align: left;}
