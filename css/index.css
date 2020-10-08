@@ -8,7 +8,7 @@ ul li{list-style: none;}
 .wrapper{position: relative;}
 .indexbg{width: 100%;height: 100%;margin-top:130px;background: url(../img/index-bg.jpg) no-repeat;background-size: 100% 100%; }
 /* 登录 */
-.indexBox{position: relative;width: 100%;height: 1000px;}
+.indexBox{position: relative;width: 100%;height: 1000px;background: blue;}
 .indexLeft{margin-top:262px;float:left;font-size: 42px;color:#fff;letter-spacing:2.33px}
 .fz-big{font-size: 50px;color:#fff;}
 .loginBox{float:right;margin-top:168px;width: 480px;height: 590px;background:rgb(255, 255, 255,0.6);box-sizing: border-box;padding: 36px 42px 43px;}
@@ -16,15 +16,16 @@ ul li{list-style: none;}
 .login-title{overflow: hidden;width: 100%;margin-bottom: 32px;}
 .icon-fg{margin:0 5px;}
 .login-content p{margin-bottom: 20px;}
-
+.login-btn2{width: 396px;height: 60px;line-height: 60px;color: #fff;background: #FF8721;text-align: center;font-size: 18px;}
 .login-left p{display: inline-block;}
-
+.login_form_left{display: inline-block;width: 100%;float: left;}
 .inputbox{width: 396px;height: 60px;line-height: 60px;font-size: 16px;padding-left: 21px;box-sizing: border-box;}
 .login{width: 480px;height: 590px;background: olivedrab;position: absolute;top: 168px;right: 197px;}
 .login-btn{width: 396px;height: 60px;line-height: 60px;font-size: 16px;background: #999999;color: #fff;}
 .icon-bottom{text-align: left;width: 396px;overflow: hidden;}
 .icon-list li{display: inline-block;vertical-align: middle;margin:0 0 0 17px;width: 40px;height: 40px}
 .icon-list li img{width:100%;display: inline-block;}
+.login-width{width: 396px;}
 /* 注册 */
 .register_title{
     font-size: 22px;
