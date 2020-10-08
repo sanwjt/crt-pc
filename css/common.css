@@ -229,12 +229,38 @@ color:#999;
 
 .green-btn{
     height: 60px;
-    background-color: #7EDCFF;
+    background-color: #FF8721;
     color: #fff;
     border-radius: 4px;
     font-size: 18px;
     font-weight: 600;
     line-height: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.origin-btn-sm{
+    height: 48px;
+    background-color: #7EDCFF;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.red-btn-sm{
+    height: 48px;
+    background-color: #F14955;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 48px;
     letter-spacing: 1px;
     text-align: center;
     cursor: pointer;

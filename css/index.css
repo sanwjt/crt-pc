@@ -219,7 +219,7 @@ ul li{list-style: none;}
 
 /* 验证 */
 .yanzheng_box{
-    width: 540px;
+    width: 560px;
     margin: 0 auto;
     margin-top: 165px;
 }
@@ -240,6 +240,8 @@ ul li{list-style: none;}
     width: 121px;
     border:1px dashed #CCCCCC;
     margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .set_box .set_line.active{
@@ -301,6 +303,22 @@ ul li{list-style: none;}
     letter-spacing: 1px;
     margin-top: 50px;
     margin-bottom: 16px;
+}
+.desc-text{
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    text-align: center;
+}
+.zhuxiao_btn{
+    width: 360px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 /* 活动 */
