@@ -109,15 +109,15 @@ ul li{list-style: none;}
 
 /* 搜索 */
 .search-banner{margin-bottom: 36px;}
-.search-bar{width: 515px;height: 60px;line-height: 60px;border-radius: 30px;position: relative;margin:-70px auto 0;box-shadow: 0px  2px 21px #FF8721;}
+.search-bar{width: 516px;height: 60px;line-height: 60px;border-radius: 30px;position: relative;margin:-70px auto 0;box-shadow: 0px  2px 21px #FF8721;}
 .search-bar input{width: 459px;height: 60px;line-height: 60px;border-radius: 30px;padding:0 28px;}
-.search-content{margin:0 auto;width: 515px;}
+.search-content{margin:0 auto;width: 516px;}
 /* .search-bar input{width: 515px;height: 60px;line-height: 60px;padding-left: 28px;box-sizing: border-box;} */
 .icon-search{width: 24px;height: 24px;vertical-align: middle;position: absolute;right: 28px;top: 20px;}
 .search-banner img{width: 100%;display: block;}
 .search-title{margin:21px 0 65px}
-.search-box{overflow: hidden;text-align: center;overflow: hidden;margin-right: -141px;width: 515px;}
-.search-box li{width: 78px;float: left;margin-right: 141px;margin:0 141px 89px 0}
+.search-box{overflow: hidden;text-align: center;overflow: hidden;margin-right: -141px;}
+.search-box li{width: 78px;float: left;margin:0 141px 89px 0}
 .search-question{width: 1200px;height: 283px;border:1px solid #E5E5E5}
 .search-question h6{width: 100%;height: 52px;line-height: 52px;background:#F7F7F7;font-size: 16px;text-align: center;color:#666;}
 .search-question ul li ul{float: left;}
