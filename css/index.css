@@ -179,6 +179,44 @@ ul li{list-style: none;}
 .wenquan-infolist2 li{margin-bottom: 16px;}
 .wenquan-ewm{float: left;margin-right: 10px;}
 
+/* 问券2 */
+.wenquan-banner{margin-bottom: 36px;}
+.wenquan-banner img{width: 100%;display: block;}
+.wenquan-content2{width: 1200px;font-size: 16px;color: #666;}
+.wenquan-content2 table tr:nth-child(2n-1){
+    background:#F7F7F7;
+   
+ }
+ .wenquan-content2 table tr td{
+     padding:18px 0 12px 21px;
+ }
+ .wenquan-content2 table tr td:nth-child(1){
+
+    width: 20%; 
+ }
+ .wenquan-content2 table tr td:nth-child(2){
+
+    width: 40%; 
+ }
+ .wenquan-content2 table tr td:nth-child(3){
+
+    width: 30%; 
+ }
+ .wenquan-content2 table tr td:nth-child(4){
+    color:#FF8721;
+    width: 20%; 
+ }
+ .wenquan-content2 table tr th:nth-child(4){
+    color:#333;
+ }
+.wenquan-content2 table tr:nth-child(2n){
+    background:#fff;  
+ }
+ 
+.wenquan-content2 table tr:nth-child(1) td:nth-child(4){
+    color:#666;
+ }
+
 /* 关联已有账号 */
 
 .relationbox{
@@ -346,6 +384,8 @@ ul li{list-style: none;}
 /* 活动 */
 .activity-content {}
 .activity-content .inner{width: ;}
+
+
 
 /* 签到 */
 .qiandao-box{width: 1200px;overflow: hidden;}
