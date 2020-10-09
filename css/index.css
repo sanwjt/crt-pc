@@ -1030,7 +1030,115 @@ ul li{list-style: none;}
     background-color: #fff;
     margin-top: 12px;
 }
+.jn_table_title{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #666666;
+    overflow: hidden;
+}
 
+.jn_table_title li{
+    float: left;
+}
+.jn_table_list li{
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.jn_table_list li span{
+    display: inline-block;
+}
+
+.jn_table_list li span.jn_user{
+    width: 90px;
+    margin-right: 84px;
+}
+.jn_table_list li span.jn_mess{
+    margin-right: 235px;
+}
+
+.jn_table_list li span.jn_time{
+    margin-right: 70px;
+}
+.jn_table_list li span.jn_status{
+    margin-right: 58px;
+}
+.jn_table_list li span.jn_action{
+    width: 50px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+.jn_list_detail{
+    padding: 28px 20px;
+    background-color: #FFEDD1;
+    margin-top: 20px;
+    position: relative;
+}
+
+.jn_list_detail p{
+    margin-bottom: 20px;
+}
+
+.jn_list_detail p .jn_username{
+    width: 54px;
+    margin-right: 31px;
+    color: #707070;
+}
+
+.jn_close_btn{
+    position: absolute;
+    right: 20px;
+    top:30px;
+    color: #FF8721;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.qt_title{
+    font-size: 16px;
+}
+.qt_title span:first-child{
+    display: inline-block;
+    margin-right: 46px;
+    color: #707070;
+}
+.qt_tv_title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+.checkList p{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.qt_tv_list li{
+    width: 67px;
+    height: 32px;
+    background: #CCCCCC;
+    border-radius: 4px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    color: #707070;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.qt_tv_list li.active{
+    background-color: #FF8721;
+    color: #fff;
+}
 
 
 
