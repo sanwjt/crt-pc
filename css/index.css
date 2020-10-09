@@ -755,6 +755,22 @@ ul li{list-style: none;}
     cursor: pointer;
 }
 
+.mine_accout_set .mine_research_add{
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translate(0,-50%);
+    cursor: pointer;
+    background-color: #FF8721;
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color:#fff;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
 
 .mine_accout_set li{
     font-size: 16px;
@@ -837,4 +853,11 @@ ul li{list-style: none;}
 }
 .base_info_set li div{
     vertical-align: middle;
+}
+.mine_renzheng p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+    line-height: 22px;
+    letter-spacing: 1px;
 }
