@@ -344,7 +344,8 @@ ul li{list-style: none;}
 }
 
 /* 活动 */
-.activity-content img{width: 100%;display: block;}
+.activity-content {}
+.activity-content .inner{width: ;}
 
 /* 签到 */
 .qiandao-box{width: 1200px;overflow: hidden;}
