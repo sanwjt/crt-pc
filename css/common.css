@@ -319,3 +319,36 @@ color:#999;
     margin: 0 auto;
     height: 220px;
 }
+
+.color721{
+    color:#FF8721
+}
+.color333{
+    color: #333;
+}
+.color955{
+    color:#F14955;
+}
+.switch_btn{
+    width: 100px;
+    height: 24px;
+    border: 1px solid #E5E5E5;
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.switch_btn div{
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    width: 50%;
+}
+
+.switch_btn div:first-child{
+    background: #CCCCCC;
+    color:#fff;
+}
+.switch_btn div:last-child{
+    background: #FF8721;
+    color:#fff;
+}
