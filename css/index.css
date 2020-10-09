@@ -397,11 +397,14 @@ ul li{list-style: none;}
 
 /* 兑换 */
 .duihuan-content{padding:24px 0 20px 24px;overflow: hidden;font-size: 16px;}
-.duihuan-left{width: 548px;height: 414px;background-image: linear-gradient(#D2FF81, #8EF0E7);position: relative;margin-right: 28px;float: left;}
+.duihuan-left{width: 548px;height: 414px;background:url(../img/duihuan-bg.png) no-repeat;position: relative;margin-right: 28px;float: left;}
 .duihuan-right{float: left;width: 600px;font-size: 16px;}
-.duihuan-righttop{width: 200px;height: 30px;background: burlywood;position: absolute;right: 0;top:0;line-height: 30px;color:#fff;text-align: center;}
+.duihuan-righttop{width: 128px;height: 40px;position: absolute;right: 10px;top:3px;line-height: 40px;color:#fff;text-align: center;}
 .duihuan-btn{width: 485px;height: 60px;line-height: 60px;background: #FF8721;color: #fff;text-align: center;}
 .duihuan-inner{overflow: hidden;margin-bottom: 25px;}
+.duihuan-leftinner{text-align: center;margin-top: 90px;}
+.error{color:#F14955;}
+.duihuan-center{text-align: left;width: 140px;margin:60px auto 0}  
 .duihuan-rule {font-size: 14px;}
 .duihuan-rule h5{font-size: 14px;margin-bottom: 8px;color:#333;}
 
