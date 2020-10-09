@@ -818,3 +818,8 @@ ul li{list-style: none;}
 .mine_action_btn.ori{
     background: #FF8721;
 }
+.zx_btn{
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 106px;
+}

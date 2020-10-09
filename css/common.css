@@ -246,7 +246,7 @@ color:#999;
 
 .origin-btn-sm{
     height: 48px;
-    background-color: #7EDCFF;
+    background-color: #FF8721;
     color: #fff;
     border-radius: 4px;
     font-size: 18px;
@@ -351,4 +351,45 @@ color:#999;
 .switch_btn div:last-child{
     background: #FF8721;
     color:#fff;
+}
+
+.dialogo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top:0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog_content{
+    width: 600px;
+    height: 406px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+.dialog_content .dialogo_text{
+    width: 409px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+
+.dialog_content .close_btn{
+    width: 20px;
+    height: 20px;
+    color:#757575;
+    position: absolute;
+    top:20px;
+    right: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 26px;
 }
