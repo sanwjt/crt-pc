@@ -123,6 +123,7 @@
 .icon-footer{
     vertical-align: middle;
     margin-right: 6px;
+    width: 18px;
 }
 
 .common_input::-webkit-input-placeholder { 
@@ -306,4 +307,15 @@ color:#999;
 
 .margin_center{
     margin: 0 auto;
+}
+
+/* 广告 */
+
+.advert_box{
+    width: 100;
+}
+.advert{
+    width: 1200px;
+    margin: 0 auto;
+    height: 220px;
 }
