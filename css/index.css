@@ -162,9 +162,12 @@ ul li{list-style: none;}
 .wenquaning-btn{margin:0 auto;width: 177px;height: 43px;line-height: 43px;background:#FF8721;color:#fff;border-radius: 21px;text-align: center;}
 .wenquaning-btn2{width: 177px;height: 43px;line-height: 43px;background:#FF8721;color:#fff;border-radius: 21px;text-align: center;position: absolute;bottom: 30px;left: 50%;margin-left: -88.5px;}
 .wenquaning-btn3{width: 177px;height: 43px;line-height: 43px;background:#fff;color:#FF8721;border-radius: 21px;text-align: center;position: absolute;bottom: 30px;left: 50%;margin-left: -88.5px;}
-
-/* .icon-canyu{margin-right: 14px;} */
-
+/* 问卷结果其他 */
+.wenquan-content{padding:69px 41px 47px 62px;width: 1096px;height:551px;background: url(../img/wenquan-bg.png) no-repeat;background-size: 100% 100%;}
+.wenquan-content{text-align: center;}
+.wenquan-content h6{font-size: 18px;margin-bottom: 16px;}
+.wenquan-content p{font-size: 16px;}
+.wenquan-otherbox{text-align: left;}
 /* 关联已有账号 */
 
 .relationbox{
