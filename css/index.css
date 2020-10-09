@@ -148,7 +148,7 @@ ul li{list-style: none;}
 .wenquan-breadnow{font-size: 22px;}
 /* 进行时1 */
 .wenquaning-list1 {text-align: left;margin-right: -80px;overflow: hidden;}
-.wenquaning-list1 li{width: 346px;height: 407px;background: #fff;position: relative;float: left;;margin-right: 80px;}
+.wenquaning-list1 li{width: 346px;height: 407px;background: #fff;position: relative;float: left;;margin-right: 80px;margin-bottom: 20px;}
 .wenquaning1-info{padding:34px 14px 20px;font-size: 18px;text-align: center;}
 /* 进行时2 */
 .wenquaning-list2 {text-align: left;margin-right: 16px;}
@@ -383,11 +383,40 @@ ul li{list-style: none;}
 }
 
 /* 活动 */
-.activity-content {}
-.activity-content .inner{width: ;}
+/* .activity-content {width: 100%;background: url(../img/activity-top.png) no-repeat;background-size: center center}
+.activity-content .inner{width: 100%;background: url(../im/activity-bg.png) no-repeat;background-size: center center} */
+.activity-content{position: relative;}
+.activity-top{width: 100%;display: block;padding:12px 22px 23px;}
+.activity-bg{width: 66%;display: block;position: absolute;top:310px;left: 50%;margin-left: -33%;}
+.activity-inner{position: absolute;width: 992px;left: 50%;margin-left: -518px;top:700px;padding:0 22px;}
+.activity-tips1{padding-left:12px;width: 194px;height: 52px;line-height: 52px;background: url(../img/activity-bar1.png) no-repeat;color:#fff;margin-bottom: 29px;margin-left: -36px;}
+.activity-tips2{padding-left:12px;width: 369px;height: 52px;line-height: 52px;background: url(../img/activity-bar2.png) no-repeat;color:#fff;margin-bottom: 29px;margin-left: -20px;}
+.activity-btn{width: 177px;height: 60px;line-height: 60px;background: #FF8721;text-align: center;color: #fff;text-align: center;margin: 0 auto;}
+.activity-ewm{margin:0 auto 18px;display: block;}
+.activity-top{margin-bottom: 23px;background: #fff;}
+.activity-bottom{background: #fff;padding:8px 0;}
+.activity-bottom table tr td{
+    padding:15px 0 15px 31px
+}
+.activity-bottom table tr td:nth-child(1){
 
+    width: 50%; 
+ }
+ .activity-bottom  table tr td:nth-child(2){
 
+    width: 30%; 
+ }
+ .activity-bottom  table tr td:nth-child(3){
 
+    width: 20%; 
+ }
+ .activity-bottom  table tr:nth-child(2n){
+    background:#F7F7F7;  
+ }
+ .activity-rule {font-size: 14px;}
+ .activity-rule ol{margin-left: 20px;}
+ .activity-rule h5{font-size: 14px;margin-bottom: 8px;color:#333;}
+ .activity-p1{line-height: 30px;}
 /* 签到 */
 .qiandao-box{width: 1200px;overflow: hidden;}
 .qiandao-list{overflow: hidden;width: 500px;float: left;}
