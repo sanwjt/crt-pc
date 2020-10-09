@@ -166,8 +166,19 @@ ul li{list-style: none;}
 .wenquan-content{padding:69px 41px 47px 62px;width: 1096px;height:551px;background: url(../img/wenquan-bg.png) no-repeat;background-size: 100% 100%;}
 .wenquan-content{text-align: center;}
 .wenquan-content h6{font-size: 18px;margin-bottom: 16px;}
-.wenquan-content p{font-size: 16px;margin-bottom: 87px;}
+.wenquan-content .wenquan-p1{font-size: 16px;margin-bottom: 87px;}
+.wenquan-content .wenquan-p2{margin-bottom: 12px;}
 .wenquan-otherbox{text-align: left;}
+.wenquan-p3{margin-bottom: 36px;}
+.wenquan-p3 span{width: 177px;height:60px;line-height: 60px;background: #FF8721;color:#fff;display: inline-block;text-align: center;}
+.wenquan-p3 input{width: 891px;height: 60px;line-height: 60px;padding-left: 27px;font-size: 16px;color: #333;margin-right: 14px;}
+.wenquan-p4{margin-bottom: 20px;}
+.wenquan-inlist1 li{float: left;margin-right: 68px;}
+.wenquan-inlist1 li:first-child,li:nth-child(2){width: 297px;}
+.wenquan-inlist1 li:nth-child(3){width: 297px;}
+.wenquan-infolist2 li{margin-bottom: 16px;}
+.wenquan-ewm{float: left;margin-right: 10px;}
+
 /* 关联已有账号 */
 
 .relationbox{
