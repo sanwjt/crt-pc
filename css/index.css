@@ -174,7 +174,8 @@ ul li{list-style: none;}
 .wenquan-p3 input{width: 891px;height: 60px;line-height: 60px;padding-left: 27px;font-size: 16px;color: #333;margin-right: 14px;}
 .wenquan-p4{margin-bottom: 20px;}
 .wenquan-inlist1 li{float: left;margin-right: 68px;}
-.wenquan-inlist1 li:first-child,li:nth-child(2){width: 297px;}
+.wenquan-inlist1 li:first-child{width: 297px;}
+.wenquan-inlist1 li:nth-child(2){width: 297px;}
 .wenquan-inlist1 li:nth-child(3){width: 297px;}
 .wenquan-infolist2 li{margin-bottom: 16px;}
 .wenquan-ewm{float: left;margin-right: 10px;}
@@ -872,3 +873,116 @@ ul li{list-style: none;}
     line-height: 22px;
     letter-spacing: 1px;
 }
+.shiming_tips{
+    width: 762px;
+    height: 66px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+.shiming_zhaopian{
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 22px;
+    display: inline-block;
+    width: 72px;
+    height: 38px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+}
+
+/* 奖金明细 */
+.jj_nav{
+    overflow: hidden;
+}
+
+.jj_nav li{
+    float: left;
+    font-size: 18px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding:0 15px;
+}
+.jj_nav li:last-child{
+    border-left: 1px solid #CCCCCC;
+}
+.jj_nav li.active{
+    font-size: 22px;
+    color:#FF8721;
+}
+
+.jj_record{
+    padding:32px 24px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.jj_table_title{
+    margin-right: -77px;
+    overflow: hidden;
+}
+
+.jj_table_title li{
+ font-size: 16px;
+ float: left;
+ color: #666666;
+ margin-right: 77px;
+ margin-bottom: 18px;
+}
+
+.jj_table_title li:first-child{
+    width: 148px;
+}
+.jj_table_title li:nth-child(2){
+    width: 408px;
+}
+.jj_table_title li:last-child{
+    width: 117px;
+}
+
+.jj_table_list li {
+    font-size: 16px;
+    margin-right: -72px;
+    margin-bottom: 18px;
+}
+
+.jj_table_list li span{
+    margin-right: 72px;
+}
+
+.jj_table_list li span:first-child{
+    width: 148px;
+    display: inline-block;
+}
+
+.jj_table_list li span:nth-child(2){
+    width: 408px;
+    display: inline-block;
+}
+
+.jj_table_list li span:last-child{
+    width: 117px;
+    display: inline-block;
+}
+
+.jn_record {
+    padding: 18px;
+    background-color: #fff;
+    margin-top: 12px;
+}
+
+
+
+
