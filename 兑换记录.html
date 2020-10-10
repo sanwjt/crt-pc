@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-09 12:36:33
+ * @LastEditTime: 2020-10-10 12:21:06
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /crt-pc/兑换记录.html
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +14,7 @@
     <!-- <link rel="stylesheet" href="css/lib/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/table.css">
 </head> 
 <body>
     <!-- 顶部 -->
@@ -32,30 +41,124 @@
             <div class="duihuan-banner"><img src="img/duihuan-banner.png" alt=""></div>
             <div class="duihuan-recourdcontent">
                 <div class="duihuan-recordtitle">
-                    <div class="duihuan-recordavtar"></div>
-                    <ul class="duihuan-recordname">
-                        <li>微信账号：李先生<span></span></li>
-                        <li>支付宝账号：未绑定<span></span></li>
+                    <!-- 头像 -->
+                    <div class="duihuan-recordavtar">
+
+                    </div>
+                    <!-- 姓名 -->
+                    <ul class="duihuan-recordname" style="margin-right: 84px;">
+                        <li>昵称</li>
+                        <li>调研社区成员</li>
                     </ul>
-                    <div class="duihuan-recordcash">
+                    <!-- 微信账号 -->
+                    <ul class="duihuan-recordname">
+                        <li>微信账号：<span class="color333">李先生</span><span class="duihuan_btn fr">更换绑定</span></li>
+                        <li>支付宝账号：<span class="color333">未绑定</span><span class="duihuan_btn fr">绑定</span></li>
+                    </ul>
+                    <div class="duihuan-recordcash" style="margin-right: 66px;">
+                        <div class="record-mid">
+                            <div class="record-midtop color721">33.37</div>
+                            <div class="record-midbottom color955">冻结现金30.9</div>
+                        </div>
+                    </div>
+                    <div class="duihuan-recorddou">
+                        <div class="record-mid">
+                            <div class="record-midtop color721">33.37</div>
+                        </div>
+                    </div>
+                    <!-- <div class="duihuan-recordjindou">
                         <div class="record-left">可兑换现金</div>
                         <div class="record-mid">
                             <div class="record-midtop">33.37</div>
                             <div class="record-midbottom">冻结现金30.9</div>
                         </div>
                         <div class="record-icon"><img src="img/icon-recordcash.png" alt=""></div>
-                    </div>
-                    <div class="duihuan-recordjindou">
-                        <div class="record-left">可兑换现金</div>
-                        <div class="record-mid">
-                            <div class="record-midtop">33.37</div>
-                            <div class="record-midbottom">冻结现金30.9</div>
-                        </div>
-                        <div class="record-icon"><img src="img/icon-recordcash.png" alt=""></div>
-                    </div>
+                    </div> -->
+                </div>
+                <div class="record_nav">
+                    <a href="">兑换奖励</a>
+                    <a href="" class="active">兑换记录</a>
                 </div>
                 <div class="record-list">
-                    
+                    <table class="join_zp" cellpadding="0" cellspacing="0">
+                        <tr class="join_zp_t">
+                            <td>兑换奖品</td>
+                            <td>消耗数额</td>
+                            <td>兑换时间</td>
+                            <td>兑换状态</td>
+                            <td>操作</td>
+                        </tr>
+                        <tbody class="join_con">
+                            <tr class="join_zp_c">
+                                <td>10现金兑换券</td>
+                                <td>10.00元</td>
+                                <td>2019-04-29 10:00:00</td>
+                                <td>20190429发放成功</td>
+                                <td class="color721">详情</td>
+                            </tr>
+                            <tr class="join_zp_n">
+                                <td colspan="5">
+                                    <div class="join_cn">
+                                        <ul class="record_status">
+                                            <li>
+                                               <p>提交审核</p> 
+                                               <span>2019-04-29 10:00:00</span>
+                                            </li>
+                                            <li class="line"></li>
+                                            <li>兑换周期</li>
+                                            <li class="line"></li>
+                                            <li>审核周期</li>
+                                            <li class="line"></li>
+                                            <li>预计发放</li>
+                                            <li class="line"></li>
+                                            <li>实际发放</li>
+                                        </ul>
+                                        <ul></ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="join_zp_c">
+                                <td>10现金兑换券</td>
+                                <td>10.00元</td>
+                                <td>2019-04-29 10:00:00</td>
+                                <td>20190429发放成功</td>
+                                <td class="color721">详情</td>
+                            </tr>
+                            <tr class="join_zp_n">
+                                <td colspan="5">
+                                    <div class="join_cn">
+                                        <ul class="record_status">
+                                            <li>
+                                               <p>提交审核</p> 
+                                               <span>2019-04-29 10:00:00</span>
+                                            </li>
+                                            <li class="line"></li>
+                                            <li>
+                                                <p>兑换周期</p> 
+                                               <span>兑换周期</span>
+                                            </li>
+                                            <li class="line"></li>
+                                            <li>
+                                                <p>审核周期</p> 
+                                                <span>审核周期</span>
+                                            </li>
+                                            <li class="line"></li>
+                                            <li>
+                                                <p>预计发放</p> 
+                                                <span>预计发放</span>
+                                            </li>
+                                            <li class="line"></li>
+                                            <li>
+                                                <p>实际发放</p> 
+                                                <span>实际发放</span>
+                                            </li>
+                                        </ul>
+                                        <ul></ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
            
@@ -87,5 +190,7 @@
       
         <div class="icon-close"><img src="img/icon-close.png" alt=""></div>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/table.js"></script>
 </body>
 </html>
