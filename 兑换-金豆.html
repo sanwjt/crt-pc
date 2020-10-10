@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>兑换</title>
     <!-- <link rel="stylesheet" href="css/lib/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
 </head> 
@@ -33,17 +34,33 @@
             <div class="duihuan-content">
                 <div class="duihuan-inner">
                     <div class="duihuan-left">
-                        <div class="duihuan-righttop">兑换</div>
-                        <div class="duihuan-leftinner">
-                            <div >新用户专享1元微信现金零钱</div>
-                            <div class="error">仅支持微信兑换</div>
-                            <div class="left-tright"><span class="icon-ljindou"></span></div>
-                           <div class="duihuan-center">
-                                <div>可兑换金豆</div>
-                                <div>兑换数量</div>
-                                <div>消费金豆<span>100</span></div>
-                           </div> 
-                        </div>
+                        <div class="duihuan-righttop">金豆兑换</div>
+                        <div class="dh-change clearfix pr">
+                            <img class="fl" style="width: 47px;margin-top: 2px;" src="img/jindou.png" alt="">
+                            <img class="fr" style="width: 51px;" src="img/qianbao.png" alt="">
+                            <span class="pa" style="width: 228px;margin-left: -114px; text-align: center;top:-24px">
+                                新用户专享1元微信现金零钱
+                                <span class="color955">仅支持微信兑换</span>
+                            </span>
+                       </div>
+
+                       <div class="dh-action">
+                            <ul>
+                                <li>可兑换金豆：<span class="color333">500</span></li>
+                                <li style="line-height: 36px;">
+                                    <span style="vertical-align: middle;">
+                                        兑换数量：
+                                    </span>
+                                    <span class="dh-counter"  style="vertical-align: middle;">
+                                        <span>-</span>
+                                        <span>1</span>
+                                        <span>+</span>
+                                    </span>
+                                    <span class="color721" style="vertical-align: middle;cursor: pointer;">全部兑换</span>
+                                </li>
+                            
+                            </ul>
+                       </div>
                         
                     </div>
                     <div class="duihuan-right">
@@ -69,21 +86,20 @@
                                     </div>
                                 </div>
                                 <div class="form-p">
-                                    <div class="label-left">滑块验证：</div>
-                                    <div class="verification-button">
-                                            点击此处进行验证  
+                                    <div class="pr" style="line-height: 60px;">
+                                        <div class="label-left">滑块验证：</div>
+                                        <div class="verify-wrap" style="margin-left: 86px;" id="verify-wrap2"></div>
                                     </div>
                                 </div>
                                 <div class="form-p">
-                                    <div class="label-left">手机验证：</div>
-                                    <div class="pr">
-                                            <input class="common_input" type="text" placeholder="请输入手机验证码">
-                                            <div class="lock-btn">倒计时59秒</div>
+                                    <div class="pr" style="line-height: 60px;">
+                                        <div class="label-left">手机验证：</div>
+                                        <input class="common_input" style="height: 60px;" type="text" placeholder="请输入手机验证码">
+                                        <div class="lock-btn">倒计时59秒</div>
+                                        <p class="common_form_error bt0 pa" style="bottom: -20px;left: 80px;">验证码错误  </p>
                                     </div>
                                 </div>
                             </div>
-            
-                            
                         </div>
                         <div class="duihuan-btn">立即兑换</div>
                     </div>
@@ -114,17 +130,28 @@
             <div class="mt20">© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
         </div>
     </div>   
-    <!-- 反馈弹窗    -->
-    <div class="fixed" style="display: none;">
-        <!-- 弹窗1.1 -->
-        <div class="fixed-inner use-up" style="display: none;">
-            感谢您的反馈，我们会尽快解决处理        </div>
-        <!-- 弹窗1.2 -->
-        <div class="fixed-inner old-user" style="display: none;">
-            很抱歉，由于网络原因反馈未提交，请您稍后再试
+
+    <div class="dialogo">
+        <div class="dialog_content" style="height: 220px;">
+            <p class="dialogo_text">
+                感谢您的参与<br>
+                您已兑换成功，我们会尽快发放
+            </p>
+            <div class="close_btn"></div>
         </div>
-      
-        <div class="icon-close"><img src="img/icon-close.png" alt=""></div>
     </div>
+
+    <script  type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jq-slideVerify.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function(){
+            var SlideVerifyPlug = window.slideVerifyPlug;
+            var slideVerify2 = new SlideVerifyPlug('#verify-wrap2',{
+                    wrapWidth:'499',
+                    initText:'请按住滑块',
+                    sucessText:'验证通过',
+                });
+        })
+    </script>
 </body>
 </html>

@@ -385,6 +385,7 @@ color:#999;
     left: 0;
     top:0;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 1111;
 }
 
 .dialog_content{
@@ -405,6 +406,7 @@ color:#999;
     letter-spacing: 1px;
     margin: 0 auto;
     margin-top: 85px;
+    text-align: center;
 }
 
 .dialog_content .close_btn{
@@ -417,6 +419,9 @@ color:#999;
     text-align: center;
     line-height: 20px;
     font-size: 26px;
+    background: url(../img/icon-close.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
 }
 .select_label{
     width: 172px;
@@ -445,3 +450,17 @@ color:#999;
 .pagination li.active{
     color:#F68D3F
 }
+.clearfix { 
+    *zoom: 1; 
+  } 
+   
+.clearfix:before, 
+.clearfix:after { 
+    display: table; 
+    line-height: 0; 
+    content: ""; 
+} 
+
+.clearfix:after { 
+    clear: both; 
+} 

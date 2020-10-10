@@ -1,0 +1,117 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-10-10 16:08:02
+ * @LastEditTime: 2020-10-10 16:19:21
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /crt-pc/反馈提交.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>反馈</title>
+    <!-- <link rel="stylesheet" href="css/lib/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/M_select.css">
+</head> 
+<body>
+    <!-- 顶部 -->
+    <div class="header">
+        <div class="header_content">
+            <div class="header_logo">logo</div>
+            <h3>CTR调研社区</h3>
+            <ul class="header_nav">
+                <li class="active">问卷</li>
+                <li>资讯</li>
+                <li>活动</li>
+                <li>抽奖</li>
+                <li>兑换</li>
+                <li>我的</li>
+            </ul>
+            <div class="header_message">
+                <div class="header_num ">2</div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="main_box">
+        <div class="main">
+            <div class="fankui-banner"><img src="img/fankui-banner.png" alt=""></div>
+            <div class="fankui-content">
+                <div class="fankui-bread"><span  class="fankui-breadnow theme-color">我要反馈</span><span class="icon-cut">|</span><span>反馈记录</span></div>
+
+                <div>
+                    <div class="select_label">发生问题日期: </div>
+                    <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker-day mt10">
+                        <!-- <i class="c-datepicker-range__icon kxiconfont icon-clock"></i> -->
+                        <input class="common_input" type="text" autocomplete="off" name="" placeholder="选择日期" class=" c-datepicker-data-input only-date" value="">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="select_label">是否有18岁以下子女: </div>
+                    <div style="display:inline-block;width: 499px;">
+                        <select class="select02" placeholder="请选择">
+                        <option value="01">男</option>
+                        <option value="02">女</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+      <!-- 底部 -->
+      <div class="footer_box">
+        <div class="footer mb20">
+            <ul>
+                <li>用户协议</li>
+                <li>隐私政策</li>
+                <li>联系我们</li>
+                <li>关注我们</li>
+                <li><img src="img/icon-sm-wb.png" alt="" class="icon-footer">微博</li>
+                <li><img src="img/icon-sm-wx.png" alt="" class="icon-footer">CTR调研社区</li>
+            </ul>
+            <div class="mt20">© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/datepicker.all.min.js"></script>
+    <script src="js/datepicker.en.js"></script>  
+    <script src="js/M_select.js"></script>
+    <script>
+        $(function(){
+
+            $(".select02").M_select({
+                "ico":"2",
+                "radius":"4px",
+                "Title":"请选择"
+            });
+
+                     //年月日单个
+          $('.J-datepicker-day').datePicker({
+            hasShortcut: true,
+            format:'YYYY-MM-DD',
+            shortcutOptions: [{
+              name: '今天',
+              day: '0'
+            }, {
+              name: '昨天',
+              day: '-1'
+            }, {
+              name: '一周前',
+              day: '-7'
+            }]
+          });
+            
+        })
+    </script>   
+</body>
+</html>
