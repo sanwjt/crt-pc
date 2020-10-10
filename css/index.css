@@ -1169,5 +1169,22 @@ ul li{list-style: none;}
     color: #fff;
 }
 
+/* 公告 */
+.gg_content{width:698px;background: #F7F7F7;padding:20px;font-size: 16px;}
+.gg_content h6{text-align: center;font-size: 16px;color:#333;margin-bottom: 8px;}
+.gg_content p{margin-bottom: 32px;color: #333333;}
+.gg_content p.gg-contentp{color:#707070;font-size:12px;text-align: center;}
+.mine-img{width: 650px;height: 268px;background: orange;}
+.gg-contentiner{padding:32px 24px 24px 24px;background: #fff;}
+.gg_list{width:402px;background:#F7F7F7;padding:20px 20px 58px 20px;position: relative;}
+.gg-listright{float: left;overflow: hidden;width: 100%;font-size: 16px;}
+.gg-listdate{color:#707979;width: 119px;font-size: 12px;}
+.gg-listtips{color:#333; width: 195px;}
+.oh{margin-top: 41px!important;}
+.gg-listinnner{padding:32px 24px;background: #fff;overflow: hidden;}
+.gg-listright li{margin-bottom: 16px;overflow: hidden;}
+.page-listbox{position: absolute;right: 20px;bottom: 18px;}
+/* 分页 */
 
-
+.page-listbox li.page-active{color:#F68D3F;}
+.page-listbox li{float: left;color:#757575;margin-right: 10px;}
