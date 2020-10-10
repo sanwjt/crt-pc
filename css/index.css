@@ -1261,6 +1261,36 @@ ul li{list-style: none;}
 .gg-listright li{margin-bottom: 16px;overflow: hidden;}
 .page-listbox{position: absolute;right: 20px;bottom: 18px;}
 /* 分页 */
-
 .page-listbox li.page-active{color:#F68D3F;}
 .page-listbox li{float: left;color:#757575;margin-right: 10px;}
+
+/* 我的等级记录 */
+.mine-djbox{overflow: hidden;margin-top: 41px;}
+.mine-djleft{width: 131px;height:1237px;float: left;margin-right: 20px;background: #E5E5E5;border-radius: 4px 0px 0px 4px;border: 1px solid #E5E5E5;padding:44px 48px 0 32px;font-size: 16px;}
+.mine-djleft li{margin-bottom: 20px;margin-right: 10px;}
+.mine-djright{width: 910px;float: left;background:#E5E5E5;padding:20px;color:#333;font-size: 16px;position: relative;}
+.icon-dj{vertical-align: bottom;margin-right: 4px;}
+.dj-rule,.dj-quanyi,.dj-how,.dj-record{background:#F7F7F7}
+.mine-djactive{color:#FF8721;}
+.dj-rule{background: #F7F7F7;margin-bottom: 20px;padding:20px;border-radius: 4px;}
+.dj-rule p{padding:20px;background: #fff;}
+.dj-rule h6,.dj-quanyi h6,.dj-how h6,.dj-record h6{margin-bottom: 12px;color: #707070;}
+.dj-quanyi{background: #F7F7F7;margin-bottom: 20px;padding:20px;border-radius: 4px;}
+.dj-how{background: #F7F7F7;margin-bottom: 20px;padding:20px;border-radius: 4px;}
+.dj-record{background: #F7F7F7;margin-bottom: 20px;padding:12px 20px 58px 20px ;border-radius: 4px;}
+/* .dj-record table tr td:nth-child(1){width: 148px;height: 22px;line-height: 22px;}
+.dj-record table tr td:nth-child(2){width: 230x;height: 22px;line-height: 22px;} */
+.dj-recordinner{overflow: hidden;padding:32px 0 32px 24px;background: #fff;border-radius: 4px;}
+.dj-innerleft{float: left;margin-right: 77px;}
+.dj-innerright{float: left;}
+.dj-innerleft li,.dj-innerright li{margin-bottom: 16px;color: #333;}
+.dj-innerleft li:nth-child(1),.dj-innerright li:nth-child(1){color:#666}
+.dj-howinner{background: #fff;padding:33px 24px;border-radius: 4px;overflow: hidden;width: 844px;}
+.dj-howinnerleft{float: left;}
+.dj-howinnercenter{float: left;color: #FF8721;}
+.dj-howinnerright{float: right;}
+.dj-howinner li ul li{margin-bottom: 16px;}
+.dj-howinnerright li{width: 50px;height: 24px;line-height: 24px;background: #FF8721;border-radius: 4px;color:#fff;font-size: 12px;text-align: center;}
+.dj-quanyiinenr{overflow: hidden;padding:20px;background: #fff;border-radius: 4px;}
+.dj-quanyiinenr table tr td{padding:10px;}
+.dj-quanyiinenr table tr:nth-child(2n-1){background: #F7F7F7;}
