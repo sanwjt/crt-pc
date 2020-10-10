@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兑换</title>
+    <!-- <link rel="stylesheet" href="css/lib/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head> 
+<body>
+    <!-- 顶部 -->
+    <div class="header">
+        <div class="header_content">
+            <div class="header_logo">logo</div>
+            <h3>CTR调研社区</h3>
+            <ul class="header_nav">
+                <li class="active">问卷</li>
+                <li>资讯</li>
+                <li>活动</li>
+                <li>抽奖</li>
+                <li>兑换</li>
+                <li>我的</li>
+            </ul>
+            <div class="header_message">
+                <div class="header_num ">2</div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="main_box">
+        <div class="main">
+            <div class="duihuan-banner"><img src="img/duihuan-banner.png" alt=""></div>
+            <div class="duihuan-content">
+                <div class="duihuan-inner">
+                    <div class="duihuan-left">
+                        <div class="duihuan-righttop">现金提取</div>
+                        <div class="dh-change clearfix pr">
+                            <img class="fl" style="width: 47px;margin-top: 2px;" src="img/jindou.png" alt="">
+                            <img class="fr" style="width: 51px;" src="img/qianbao.png" alt="">
+                            <span class="pa" style="width: 228px;margin-left: -114px; text-align: center;top:-24px">
+                                <span class="color333">支付宝兑换</span>
+                            </span>
+                       </div>
+
+                       <div class="dh-action">
+                            <ul>
+                                <li>可兑换金豆：<span class="color333">500</span></li>
+                                <li style="line-height: 36px;">
+                                    <span style="vertical-align: middle;">
+                                        兑换数量：
+                                    </span>
+                                    <input class="dh-input" type="text">
+                                    <span class="color721" style="vertical-align: middle;cursor: pointer;">最大数</span>
+                                </li>
+                                <li>提现方式：<span class="color333">支付宝（需10%手续费)</span></li>
+                                <li>手续费：<span class="color721">100元</span></li>
+                                <li>到账金额：<span class="color721">100元</span></li>
+                            </ul>
+                       </div>
+                        
+                    </div>
+                    <div class="duihuan-right">
+                        <p class="errortips">温馨提示：姓名与绑定微信实名认证姓名需保持一致，否则兑换将会发放失败。如需修改姓名，请到【我的--兑换信息】中修改。</p>
+                        <div class="register_form">
+                            <div class="register_form_left">
+                                <div class="form-p">
+                                    <div class="label-left">微信用户：</div>
+                                    <div class="pr">
+                                       李先生lee
+                                    </div>
+                                </div>
+                                <div class="form-p">
+                                    <div class="label-left">姓名：</div>
+                                    <div class="pr">
+                                        李**
+                                    </div>
+                                </div>
+                                <div class="form-p">
+                                    <div class="label-left">手机号码：</div>
+                                    <div class="pr">
+                                        138****8888
+                                    </div>
+                                </div>
+                                <div class="form-p">
+                                    <div class="pr" style="line-height: 60px;">
+                                        <div class="label-left">滑块验证：</div>
+                                        <div class="verify-wrap" style="margin-left: 86px;" id="verify-wrap2"></div>
+                                    </div>
+                                </div>
+                                <div class="form-p">
+                                    <div class="pr" style="line-height: 60px;">
+                                        <div class="label-left">手机验证：</div>
+                                        <input class="common_input" style="height: 60px;" type="text" placeholder="请输入手机验证码">
+                                        <div class="lock-btn">倒计时59秒</div>
+                                        <p class="common_form_error bt0 pa" style="bottom: -20px;left: 80px;">验证码错误  </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="duihuan-btn">立即兑换</div>
+                    </div>
+                </div>
+               
+                <div class="duihuan-rule">
+                    <h5>兑换规则</h5>
+                   <p>1.用户首次兑换需要绑定手机填写姓名（填写的姓名请与关联微信实名认证姓名保持一致，否则兑换将会发放失败！）；</p> 
+                   <p>2.每两周整理一次兑换，审核时间为1-5个工作日。 (如遇法定节假日，审核周期会顺延)</p>
+                   <p>3.兑换发放失败的积分，会在兑换发放后3个工作日退回，请重新申请兑换。</p>
+
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer_box">
+        <div class="footer mb20">
+            <ul>
+                <li>用户协议</li>
+                <li>隐私政策</li>
+                <li>联系我们</li>
+                <li>关注我们</li>
+                <li><img src="img/icon-sm-wb.png" alt="" class="icon-footer">微博</li>
+                <li><img src="img/icon-sm-wx.png" alt="" class="icon-footer">CTR调研社区</li>
+            </ul>
+            <div class="mt20">© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
+        </div>
+    </div>   
+    <!-- 反馈弹窗    -->
+    <div class="fixed" style="display: none;">
+        <!-- 弹窗1.1 -->
+        <div class="fixed-inner use-up" style="display: none;">
+            感谢您的反馈，我们会尽快解决处理        </div>
+        <!-- 弹窗1.2 -->
+        <div class="fixed-inner old-user" style="display: none;">
+            很抱歉，由于网络原因反馈未提交，请您稍后再试
+        </div>
+      
+        <div class="icon-close"><img src="img/icon-close.png" alt=""></div>
+    </div>
+    <script  type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jq-slideVerify.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function(){
+            var SlideVerifyPlug = window.slideVerifyPlug;
+            var slideVerify2 = new SlideVerifyPlug('#verify-wrap2',{
+                    wrapWidth:'499',
+                    initText:'请按住滑块',
+                    sucessText:'验证通过',
+                });
+        })
+    </script>
+</body>
+</html>
