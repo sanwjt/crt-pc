@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-10 16:08:02
- * @LastEditTime: 2020-10-10 16:19:21
+ * @LastEditTime: 2020-10-10 16:43:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/反馈提交.html
@@ -44,7 +44,7 @@
             <div class="fankui-content">
                 <div class="fankui-bread"><span  class="fankui-breadnow theme-color">我要反馈</span><span class="icon-cut">|</span><span>反馈记录</span></div>
 
-                <div>
+                <div style="margin-top: 40px;">
                     <div class="select_label">发生问题日期: </div>
                     <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker-day mt10">
                         <!-- <i class="c-datepicker-range__icon kxiconfont icon-clock"></i> -->
@@ -52,8 +52,8 @@
                     </div>
                 </div>
 
-                <div>
-                    <div class="select_label">是否有18岁以下子女: </div>
+                <div class="fk_form" style="margin-top: 40px;">
+                    <div class="select_label">问题反馈类型: </div>
                     <div style="display:inline-block;width: 499px;">
                         <select class="select02" placeholder="请选择">
                         <option value="01">男</option>
@@ -62,8 +62,22 @@
                     </div>
                 </div>
 
+                <div class="fk_form" style="height: auto;">
+                    <div class="select_label">问题描述: </div>
+                    <div style="display:inline-block;width: 499px;">
+                        <textarea name="" id="" cols="30" rows="10" style="width: 100%;"></textarea>
+                    </div>
+                </div>
+                
+                <div class="fk_form" style="height: auto;">
+                    <div class="select_label">上传问题图片: </div>
+                    <div style="display:inline-block;width: 499px;">
+                        <input class="mb20" style="color:#707070;" type="file" placeholder="选择照片">
+                    </div>
+                </div>
             </div>
-           
+
+            <div class="origin-btn" style="width:300px;margin:0 auto;margin-bottom:60px; margin-top:60px">提交反馈</div>
         </div>
     </div>
       <!-- 底部 -->
@@ -81,6 +95,15 @@
         </div>
     </div>
 
+    <div class="dialogo">
+        <div class="dialog_content" style="height: 220px;">
+            <p class="dialogo_text">
+                感谢您的反馈，我们会尽快解决处理
+            </p>
+            <div class="close_btn"></div>
+        </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/datepicker.all.min.js"></script>
@@ -92,7 +115,7 @@
             $(".select02").M_select({
                 "ico":"2",
                 "radius":"4px",
-                "Title":"请选择"
+                "Title":"网站相关问题"
             });
 
                      //年月日单个
