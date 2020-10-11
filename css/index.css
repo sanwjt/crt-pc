@@ -263,6 +263,13 @@ ul li{list-style: none;}
 .wenquan-inlist1 li:nth-child(3){width: 297px;}
 .wenquan-infolist2 li{margin-bottom: 16px;}
 .wenquan-ewm{float: left;margin-right: 10px;}
+.copy-btn{
+    position: absolute;
+    right: -10px;
+    top:50%;
+    transform: translate(0,-50%);
+    
+}
 
 /* 问券2 */
 .wenquan-banner{margin-bottom: 36px;}
