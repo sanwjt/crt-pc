@@ -64,8 +64,22 @@ ul li{list-style: none;}
 /* 抽奖 */
 .choujiang-banner{margin-bottom: 36px;}
 .choujiang-banner img{width: 100%;display: block;}
-.choujiang-game{width: 570px;height: 697px;background: url(../img/game.png) no-repeat;background-size: 100% 100%;}
-.choujiang-content{width: 1200px;height: 796px;background: #FFC15D;margin:0 auto;border-radius:10px;box-sizing: border-box;padding:36px 28px 23px;margin-bottom: 32px; -moz-box-sizing: content-box; -webkit-box-sizing: content-box;-o-box-sizing: content-box;-ms-box-sizing: content-box; }
+.choujiang-game{
+    width: 570px;
+    height: 697px;
+    background: url(../img/zhuanpan/bg.png) no-repeat;
+    background-size: 100%;
+}
+.choujiang-content{
+    width: 1200px;
+    height: 796px;
+    background: #FFC15D;
+    margin:0 auto;
+    border-radius:10px;
+    box-sizing: border-box;
+    padding:36px 28px 23px;
+    margin-bottom: 32px; 
+}
 .choujiang-content h5{color: #F14955;font-size: 20px;margin-bottom: 12px;}
 .choujiang-namelist{width: 570px;height: 698px;background-color: #FFF6D9;border-radius: 21px;box-sizing: border-box;padding:29px 66px 23px 40px;}
 .choujiang-namelist li{margin-bottom: 17px;}
@@ -74,17 +88,78 @@ ul li{list-style: none;}
 /* 抽奖弹窗 */
 .fixed{position: fixed;width: 100%;height: 100%;background: rgb(0, 0, 0,0.6);z-index: 11;left: 0;top:0;}
 .fixed-inner{font-size: 18px;color: #666;background: #fff;text-align: center;}
-.use-up{padding:85px 71px;}
-.old-user{padding:85px 151px 80px;}
-.icon-close{position: absolute;width: 20px;height: 20px;top:19px;right: 19px;}
+.use-up{
+    padding:85px 71px;
+    width: 601px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.old-user{
+    padding:85px 151px 80px;
+    width: 601px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.icon-close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:19px;
+    right: 19px;
+    cursor: pointer;
+}
 .btn{padding:16px 43px;background: #FF8721;color: #fff;}
-.no-prize{padding:85px 141px 111px;}
-.cel-prize{padding:85px 190px 110px;}
-.prize-form{padding:85px 51px 45px;font-size: 16px;color: #999;}
+
+.no-prize{
+    padding:85px 141px 111px;
+    width: 601px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.cel-prize{
+    padding:85px 190px 110px;
+    width: 601px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.prize-form{
+    padding:85px 51px 45px;
+    font-size: 16px;
+    color: #999;
+    width: 601px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
 .prize-form h6{font-size: 18px;color: #666;}
 .prize-tips{font-size: 14px;text-align: left;}
 .prize-input{margin-bottom: 20px;}
 .prize-input input{width: 499px;height: 60px;border: 1px solid #ccc;padding-left: 21px;}
+.prize-redbtn{
+    width: 497px;
+    height: 60px;
+    background: #ED2E41;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+}
 /* 反馈 */
 .fankui-banner{margin-bottom: 36px;}
 .fankui-banner img{width: 100%;display: block;}
@@ -510,6 +585,8 @@ ul li{list-style: none;}
     background-size: cover;
     padding: 0 68px;
     padding-top: 195px;
+    margin-bottom: 160px;
+    padding-bottom: 40px;
 }
 .qiandao_rili{
     position: absolute;
@@ -518,10 +595,135 @@ ul li{list-style: none;}
     right: -40px;
 }
 .qiandao-box{overflow: hidden;}
-.qiandao-list{overflow: hidden;width: 500px;float: left;}
-.qiandao-list li{width: 103px;height: 140px;background: gray;float: left;margin:0 18px 20px;position: relative;font-size: 16px;}
-.qiandao-list li:last-child{width: 243px;height: 140px;background: gray;}
-.qiandao-list li .icon-rank{width: 30px;height: 30px;position: absolute;left: 0;top:0;background: orange;text-align: center;line-height: 30px;}
+.qiandao-list{
+    overflow: hidden;
+    width: 560px;
+    float: left;
+    margin-left: 30px;
+    margin-right: -35px;
+}
+.qiandao-list li{
+    width: 103px;
+    height: 140px;
+    background: gray;
+    float: left;
+    /* margin:0 18px 20px; */
+    margin-right: 35px;
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.qiandao-list li .qiandao-lingqu{
+    width: 74px;
+    position: absolute;
+    left: 50%;
+    margin-left: -37px;
+    top:20px;
+    display: none;
+}
+.qiandao-list li .qiandao-jinbi{
+    width: 38px;
+    position: absolute;
+    /* left: 31px; */
+    left: 50%;
+    margin-left: -19px;
+    top:57px;
+    display: none;
+}
+
+.qiandao-list li .qiandao-lingqu{
+    width: 74px;
+    position: absolute;
+    /* left: 14px; */
+    left: 50%;
+    margin-left: -37px;
+    top:20px;
+    display: none;
+}
+.qiandao-list li .qiandao-jinbi{
+    width: 38px;
+    position: absolute;
+    left: 31px;
+    top:57px;
+    left: 50%;
+    margin-left: -19px;
+    display: none;
+}
+.qiandao-list li.getdone .qiandao-lingqu{
+    display: block;
+}
+.qiandao-list li.getdone .qiandao-jinbi{
+    display: block;
+}
+
+.qiandao-list li.getdone{
+    background: url(../img/yilingqubg.png) no-repeat  ;
+    background-size: cover;
+}
+
+.qiandao-list li.getdone .qiandao-bottom{
+    background-color: #ccc;
+}
+
+.qiandao-list li.getdone .qiandao-jindou{
+    display: none;
+}
+
+.qiandao-list li.noget {
+    background: url(../img/jinrilingqubg.png) no-repeat;
+    background-size: cover;
+}
+
+.qiandao-list li.noget .qiandao-bottom{
+    background-color: #FF8721;
+
+}
+.qiandao-list li .qiandao-jindou{
+    width: 63px;
+    left: 25px;
+    top: 27px;
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;
+}
+
+.qiandao-list li:last-child{
+    width: 243px;
+    height: 140px;
+    /* background: gray; */
+}
+
+.qiandao-ri{
+    width: 465px;
+}
+.qiandao-ri h4{
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.qiandao-ri p{
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.qiandao-list li .icon-rank{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top:0;
+    background: orange;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
 .qiandao-bottom{width: 100%;height: 25px;line-height: 25px;color:#fff;text-align: center;position: absolute;bottom: 0;left: 0;background: blue;}
 
 /* 兑换 */

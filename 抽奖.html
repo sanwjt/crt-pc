@@ -6,6 +6,7 @@
     <!-- <link rel="stylesheet" href="css/lib/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/lib/zhuanpan.css">
 </head> 
 <body>
     <!-- 顶部 -->
@@ -26,16 +27,94 @@
             </div>
         </div>
     </div>
+    <div class="choujiang-banner">
+        <img src="img/choujiang-banner1.png" alt="">
+    </div>
     <!-- 内容 -->
     <div class="main_box">
         <div class="main">
-            <div class="choujiang-banner">
-                <img src="img/choujiang-banner1.png" alt="">
-            </div>
+           
             <div class="choujiang-content">
                 <div class="fl">
                     <h5>幸运大转盘</h5>
-                    <div class="choujiang-game"></div>
+                    <div class="choujiang-game">
+                        <div class="draw" id="lottery">
+                            <table>
+                                <tr>
+                                    <td class="item lottery-unit lottery-unit-0">
+                                        <div class="img">
+                                            <img src="img/zhuanpan/img1.png" style="width: 87px;" alt="">
+                                        </div>
+                                        <span class="name">1000个金豆</span>
+                                    </td>
+                                    <td class="gap"></td>
+                                    <td class="item lottery-unit lottery-unit-1">
+                                        <div class="img">
+                                            <img src="img/zhuanpan/img2.png" style="width:53px" alt="">
+                                        </div>
+                                        <span class="name">1元网站现金</span>
+                                    </td>
+                                    <td class="gap"></td>
+                                    <td class="item lottery-unit lottery-unit-2">
+                                        <div class="img">
+                                            <img src="img/zhuanpan/img3.png" style="width:53px" alt="">
+                                        </div>
+                                        <span class="name">谢谢参与</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="gap-2" colspan="5"></td>
+                                </tr>
+                                <tr>
+                                    <td class="item lottery-unit lottery-unit-7">
+                                        <div class="img">
+                                            <img src="img/zhuanpan/img4.png" style="width:98px" alt="">
+                                        </div>
+                                        <span class="name">荣氏火锅</span>
+                                    </td>
+                                    <td class="gap"></td>
+                                    <td class="">
+                                        <a class="draw-btn" href="javascript:"></a>
+                                    </td>
+                                    <td class="gap"></td>
+                                    <td class="item lottery-unit lottery-unit-3">
+                                        <div class="img">
+                                            <img src="img/zhuanpan/img5.png" style="width:46px" alt="">
+                                        </div>
+                                        <span class="name">20个金豆</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="gap-2" colspan="5"></td>
+                                </tr>
+                                <tr>
+                                    <td class="item lottery-unit lottery-unit-6">
+                                        <div class="img">
+                                            <img src="img/zhuanpan/img6.png" style="width:84px" alt="">
+                                        </div>
+                                        <span class="name">3元网站现金</span>
+                                    </td>
+                                    <td class="gap"></td>
+                                    <td class="item lottery-unit lottery-unit-5">
+                                        <div class="img">
+                                            <img src="img/zhuanpan/img7.png" style="width:60px"  alt="">
+                                        </div>
+                                        <span class="name">手机充值卡5元</span>
+                                    </td>
+                                    <td class="gap"></td>
+                                    <td class="item lottery-unit lottery-unit-4">
+                                        <div class="img">
+                                            <img src="img/zhuanpan/img8.png" style="width:76px"  alt="">
+                                        </div>
+                                        <span class="name">手机充值卡10元</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="prize-redbtn">手机充值卡10元</div>
+                
+                    </div>
+
                 </div>
                 <div class="fr">
                     <h5>获奖动态</h5>
@@ -85,21 +164,25 @@
     <!-- 中奖弹窗    -->
     <div class="fixed" style="display: none;">
         <!-- 抽奖次数用完 -->
-        <div class="fixed-inner use-up" style="display: none;">
+        <div class="fixed-inner use-up"  style="display: none;">
             很抱歉，您已完成本次抽奖，您可继续参与商业调查<br/>或升级钻石会员获得更多抽奖次数，谢谢参与
+            <div class="icon-close"><img src="img/icon-close.png" alt=""></div>
         </div>
         <!-- 老用户提示 -->
-        <div class="fixed-inner old-user" style="display: none;">
+        <div class="fixed-inner old-user" style="display: none;" >
             为了账号积分安全，请先绑定手机
-            <div class="btn">去绑定&gt;&gt;</div>
+            <div class="btn" style="margin-top: 30px;">去绑定&gt;&gt;</div>
+            <div class="icon-close"><img src="img/icon-close.png" alt=""></div>
         </div>
          <!-- 未中奖 -->
          <div class="fixed-inner no-prize" style="display: none;">
             很遗憾，本次抽奖未中奖，谢谢参与
+            <div class="icon-close"><img src="img/icon-close.png" alt=""></div>
         </div>
          <!-- 中奖 -->
-         <div class="fixed-inner cel-prize" style="display: none;">
+         <div class="fixed-inner cel-prize"  style="display: none;">
             恭喜您，获得（奖励）～
+            <div class="icon-close"><img src="img/icon-close.png" alt=""></div>
         </div>
         <!-- 中奖信息填写 -->
         <div class="fixed-inner prize-form">
@@ -109,8 +192,104 @@
             <div class="prize-input"><input type="text" placeholder="请输入联系电话"/></div>
             <div class="prize-input"><input type="text" placeholder="请输入邮寄地址"/></div>
             <div class="btn">确认无误</div>
+            <div class="icon-close"><img src="img/icon-close.png" alt=""></div>
         </div>
-        <div class="icon-close"><img src="img/icon-close.png" alt=""></div>
     </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var lottery = {
+            index: -1, //当前转动到哪个位置，起点位置
+            count: 0, //总共有多少个位置
+            timer: 0, //setTimeout的ID，用clearTimeout清除
+            speed: 20, //初始转动速度
+            times: 0, //转动次数
+            cycle: 50, //转动基本次数：即至少需要转动多少次再进入抽奖环节
+            prize: -1, //中奖位置
+            init: function (id) {
+                if ($('#' + id).find('.lottery-unit').length > 0) {
+                    $lottery = $('#' + id);
+                    $units = $lottery.find('.lottery-unit');
+                    this.obj = $lottery;
+                    this.count = $units.length;
+                    $lottery.find('.lottery-unit.lottery-unit-' + this.index).addClass('active');
+                };
+            },
+            roll: function () {
+                var index = this.index;
+                var count = this.count;
+                var lottery = this.obj;
+                $(lottery).find('.lottery-unit.lottery-unit-' + index).removeClass('active');
+                index += 1;
+                if (index > count - 1) {
+                    index = 0;
+                };
+                $(lottery).find('.lottery-unit.lottery-unit-' + index).addClass('active');
+                this.index = index;
+                return false;
+            },
+            stop: function (index) {
+                this.prize = index;
+                return false;
+            }
+        };
+
+        function roll() {
+            lottery.times += 1;
+            lottery.roll(); //转动过程调用的是lottery的roll方法，这里是第一次调用初始化
+
+            if (lottery.times > lottery.cycle + 10 && lottery.prize == lottery.index) {
+                clearTimeout(lottery.timer);
+
+                // layer.open({
+                //     type: 1,
+                //     shadeClose: true,
+                //     shade: false,
+                //     maxmin: true, //开启最大化最小化按钮
+                //     area: ['893px', '600px'],
+                //     content: $("#info").html()
+                // });
+
+                lottery.prize = -1;
+                lottery.times = 0;
+                click = false;
+            } else {
+                if (lottery.times < lottery.cycle) {
+                    lottery.speed -= 10;
+                } else if (lottery.times == lottery.cycle) {
+                    var index = Math.random() * (lottery.count) | 0; //静态演示，随机产生一个奖品序号，实际需请求接口产生
+                    lottery.prize = index;
+                } else {
+                    if (lottery.times > lottery.cycle + 10 && ((lottery.prize == 0 && lottery.index == 7) || lottery.prize == lottery.index + 1)) {
+                        lottery.speed += 110;
+                    } else {
+                        lottery.speed += 20;
+                    }
+                }
+                if (lottery.speed < 40) {
+                    lottery.speed = 40;
+                };
+                lottery.timer = setTimeout(roll, lottery.speed); //循环调用
+            }
+            return false;
+        }
+
+        var click = false;
+
+        window.onload = function () {
+            lottery.init('lottery');
+            $('.draw-btn').click(function () {
+                if (click) { //click控制一次抽奖过程中不能重复点击抽奖按钮，后面的点击不响应
+                    return false;
+
+                } else {
+                    lottery.speed = 100;
+                    roll(); //转圈过程不响应click事件，会将click置为false
+                    click = true; //一次抽奖完成后，设置click为true，可继续抽奖
+                    return false;
+                }
+            });
+        };
+    </script>
 </body>
 </html>

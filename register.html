@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-04 14:17:52
- * @LastEditTime: 2020-10-06 11:22:30
+ * @LastEditTime: 2020-10-11 21:56:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/login.html
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/M_select.css">
 </head> 
 <body>
     <!-- 顶部 -->
@@ -71,13 +73,34 @@
                 <div class="register_form_right">
                     <div class="register_form_title">* 请认真填写下面基本信息,以保证您能更多的完成商业调查,获取奖励。</div>
 
-                    <div class="common_form_item mb20">
+                    <div class="common_form_item mb20" style="margin-top: -6px;">
                         <div class="common_form_label">出生年月：</div>
-                        <div class="pr dib">
-                          <input class="common_input mb20" type="text" placeholder="请再次输入密码">
-                          <p class="common_form_error bt0 pa">生日不得为空</p>
+                        <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker-day mt10" style="display: inline-block;">
+                            <!-- <i class="c-datepicker-range__icon kxiconfont icon-clock"></i> -->
+                            <input class="common_input" type="text" autocomplete="off" name="" placeholder="选择日期" class=" c-datepicker-data-input only-date" value="">
+                            <p class="common_form_error bt0 pa">出生日期不能为空</p>
                         </div>
                     </div>
+                    <div class="common_form_item mb20" style="margin-top: 30px;">
+                        <div class="select_label" style="width: 80px;vertical-align: middle;">城市: </div>
+                        <div style="display:inline-block;width: 499px;vertical-align: middle;">
+                            <select class="select02" placeholder="请选择">
+                            <option value="01">男</option>
+                            <option value="02">女</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="common_form_item mb20" style="margin-top: 30px;">
+                        <div class="select_label" style="width: 80px;vertical-align: middle;">性别: </div>
+                        <div style="display:inline-block;width: 499px;vertical-align: middle;">
+                            <select class="select02" placeholder="请选择">
+                            <option value="01">男</option>
+                            <option value="02">女</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="color333" style="font-size: 16px;"><input type="checkbox"  name="category" value="1" style="margin-right:10px"/>我已阅读并同意《服务条款》 </p> 
 
                     <div class="oh">
                         <div class="fl">
@@ -105,5 +128,36 @@
             <div class="mt20">© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
         </div>
     </div>      
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/datepicker.all.min.js"></script>
+    <script src="js/datepicker.en.js"></script>
+    <script src="js/M_select.js"></script>
+    <script>
+        $(function(){
+            
+            $(".select02").M_select({
+                "ico":"2",
+                "radius":"4px",
+                "Title":"请选择"
+            });
+
+
+            $('.J-datepicker-day').datePicker({
+            hasShortcut: true,
+            format:'YYYY-MM-DD',
+            shortcutOptions: [{
+              name: '今天',
+              day: '0'
+            }, {
+              name: '昨天',
+              day: '-1'
+            }, {
+              name: '一周前',
+              day: '-7'
+            }]
+          });
+        })
+    </script>
 </body>
 </html>
