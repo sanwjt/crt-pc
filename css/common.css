@@ -78,11 +78,18 @@
 
 .main_box{
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .main_box .main{
     width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer_box.fixedbottom{
+    position: fixed;
+    bottom: 0;
 }
 
 .footer_box{
