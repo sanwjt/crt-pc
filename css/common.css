@@ -46,6 +46,7 @@
     font-weight: 500;
     height: 28px;
     line-height: 32px;
+    color: #333;
 }
 .header_content .header_nav li.active{
     border-bottom: 2px solid #FF8721;
@@ -109,7 +110,7 @@
 }
 
 .footer li{
-    color: #E5E5E5;
+    color: #A4A4A4;
     font-size: 16px;
     font-weight: 400;
     float: left;
@@ -124,7 +125,7 @@
 .footer div{
     font-weight: 400;
     font-size: 14px;
-    color: #E5E5E5;
+    color: #A4A4A4;
     text-align: center;
 }
 .icon-footer{
@@ -172,6 +173,8 @@ color:#999;
     padding-left: 18px;
     height: 20px;
     line-height: 20px;
+    background: url(../img/zhuyi.png) no-repeat 0 center;
+    background-size: 14px;
 }
 
 .common_input{
