@@ -506,6 +506,12 @@ ul li{list-style: none;}
     padding:22px;
 }
 .activity-bottom{background: #fff;padding:8px 0;}
+.activity-bottom table tr td:nth-child(3){
+    color: #FF8721;
+}
+.activity-bottom table tr:nth-child(1) td:nth-child(3){
+    color: #000;
+}
 .activity-bottom table tr td{
     padding:15px 0 15px 31px
 }
