@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 08:45:29
- * @LastEditTime: 2020-10-18 22:49:28
+ * @LastEditTime: 2020-10-25 21:29:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/我的.html
@@ -17,24 +17,26 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <!-- 顶部 -->
-    <div class="header">
-        <div class="header_content">
-            <div class="header_logo">logo</div>
-            <h3>CTR调研社区</h3>
-            <ul class="header_nav">
-                <li class="active">问卷</li>
-                <li>资讯</li>
-                <li>活动</li>
-                <li>抽奖</li>
-                <li>兑换</li>
-                <li>我的</li>
-            </ul>
-            <div class="header_message">
-                <div class="header_num ">2</div>
+         <!-- 顶部 -->
+         <div class="header-vertial">
+            <div class="header">
+                <div class="header_content">
+                    <div class="header_logo">logo</div>
+                    <h3>CTR调研社区</h3>
+                    <ul class="header_nav">
+                        <li class="active">问卷</li>
+                        <li>资讯</li>
+                        <li>活动</li>
+                        <li>抽奖</li>
+                        <li>兑换</li>
+                        <li>我的</li>
+                    </ul>
+                    <div class="header_message">
+                        <div class="header_num ">2</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     <!-- 广告 -->
     <div class="advert_box">
         <div class="advert" style="background-color: #ccc;">
@@ -211,6 +213,29 @@
         </div>
     </div>   
     <script src="js/jquery.min.js"></script>
-    <script src="js/bottomnav.js"></script>         
+    <script src="js/bottomnav.js"></script>
+    <script>
+        $(function(){
+            $('.origin-btn-smsuper').on('click',function(){
+                if(!$(this).hasClass('origin-btn-smsuper-cancel')){
+                    $(this).siblings('.mine_content_inner').hide();
+                    $(this).removeClass('origin-btn-smsuper').addClass('origin-btn-smsuper-cancel');
+                }else{
+                    $(this).siblings('.mine_content_inner').show();
+                    $(this).removeClass('origin-btn-smsuper-cancel').addClass('origin-btn-smsuper');
+                }
+            });
+            
+            $('.origin-btn-smsuper-cancel').on('click',function(){
+                if(!$(this).hasClass('origin-btn-smsuper-cancel')){
+                    $(this).siblings('.mine_content_inner').hide();
+                    $(this).removeClass('origin-btn-smsuper').addClass('origin-btn-smsuper-cancel');
+                }else{
+                    $(this).siblings('.mine_content_inner').show();
+                    $(this).removeClass('origin-btn-smsuper-cancel').addClass('origin-btn-smsuper');
+                }
+            })
+        })
+    </script>         
 </body>
 </html>

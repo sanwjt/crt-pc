@@ -325,8 +325,25 @@ ul li{list-style: none;}
 /* 搜索结果 */
 .result-titleleft{height: 52px;background: #F9F9F9;line-height: 52px;padding-left: 20px;}
 .result-titleright{height: 52px;background: #F9F9F9;line-height: 52px;}
-.search-resultbox{width: 1200px;margin:0 auto;overflow: hidden;font-size: 16px;}
+.search-resultbox{
+    width: 1200px;
+    margin:0 auto;
+    overflow: hidden;
+    font-size: 16px;
+    border:1px solid #E5E5E5;
+}
+
 .result-left{width: 180px;background: #F7F7F7;font-size: 16px;color: #707070;font-size: 16px;line-height: 30px;padding:16px 0 139px 20px;}
+
+.result-left a{
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.result-left li{
+    margin-bottom: 20px;
+}
 .result-right{width: 968px;padding-left: 32px;}
 .result-question{padding:27px 17px 17px;background: #F7F7F7;}
 .result-question p{text-align: center;}
@@ -338,7 +355,10 @@ ul li{list-style: none;}
 .red-btn{background: #F14955;float: left;}
 .ori-btn{background: #FF8721;float: right;}
 
-.search-acitive{color:#FF8721}
+.search-acitive{
+    color:#FF8721;
+    border-bottom: 1px solid #FF8721;
+}
 
 /* 问卷-甄别 */
 .fixed-bar{position: absolute;right: 0;bottom: 0;}
@@ -370,7 +390,17 @@ ul li{list-style: none;}
 .wenquan-otherbox{text-align: left;}
 .wenquan-p3{margin-bottom: 36px;}
 .wenquan-p3 span{width: 177px;height:60px;line-height: 60px;background: #FF8721;color:#fff;display: inline-block;text-align: center;}
-.wenquan-p3 input{width: 891px;height: 60px;line-height: 60px;padding-left: 27px;font-size: 16px;color: #333;margin-right: 14px;}
+.wenquan-p3 input{
+    width: 758px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 .wenquan-p4{margin-bottom: 20px;}
 .wenquan-inlist1 li{float: left;margin-right: 68px;}
 .wenquan-inlist1 li:first-child{width: 297px;}
@@ -380,7 +410,7 @@ ul li{list-style: none;}
 .wenquan-ewm{float: left;margin-right: 10px;}
 .copy-btn{
     position: absolute;
-    right: -10px;
+    right: 150px;
     top:50%;
     transform: translate(0,-50%);
     
@@ -673,6 +703,7 @@ ul li{list-style: none;}
  .activity_line{
      width: 200px;
      position: relative;
+     margin-left: 36px;
  }
 
  /* .activity_line{
@@ -1765,6 +1796,20 @@ ul li{list-style: none;}
 .qt_title{
     font-size: 16px;
 }
+
+.openclosebtn {
+    width: 50px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid #CCCCCC;
+    font-size: 12px;
+    display: block;
+    float: right;
+    color:#707070;
+    border-radius: 4px;
+    cursor: pointer;
+}
 .qt_title span:first-child{
     display: inline-block;
     margin-right: 46px;
@@ -1823,9 +1868,26 @@ ul li{list-style: none;}
 
 /* 我的等级记录 */
 .mine-djbox{overflow: hidden;margin-top: 41px;}
-.mine-djleft{width: 131px;height:1237px;float: left;margin-right: 20px;background: #E5E5E5;border-radius: 4px 0px 0px 4px;border: 1px solid #E5E5E5;padding:44px 48px 0 32px;font-size: 16px;}
+.mine-djleft{
+    width: 167px;
+    height:1064px;
+    float: left;
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid hsl(0, 0%, 90%);
+    padding:44px 48px 0 32px;
+    font-size: 16px;
+}
 .mine-djleft li{margin-bottom: 20px;margin-right: 10px;}
-.mine-djright{width: 910px;float: left;background:#E5E5E5;padding:20px;color:#333;font-size: 16px;position: relative;}
+.mine-djright{
+    width: 910px;
+    float: right;
+    padding:20px;
+    color:#333;
+    font-size: 16px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    border-left: none;
+}
 .icon-dj{vertical-align: bottom;margin-right: 4px;}
 .dj-rule,.dj-quanyi,.dj-how,.dj-record{background:#F7F7F7}
 .mine-djactive{color:#FF8721;}

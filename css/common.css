@@ -1,7 +1,15 @@
 
+.header-vertial{
+    height: 131px;
+}
 .header {
     width: 100%;
     border-bottom: 1px solid #E5E5E5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11111;
+    background: #fff;
 }
 
 .header .header_content{
