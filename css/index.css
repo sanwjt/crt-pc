@@ -1,4 +1,4 @@
-html,body,.container{width: 100%;height: 100%;font-size: 18px;}
+html,body,.container{width: 100%;height: 100%;font-size: 18px;font-family: '"Microsoft YaHei';}
 .theme-color{color:#FF8721}
 .fl{float: left;}
 .fr{float: right;}
@@ -198,7 +198,7 @@ ul li{list-style: none;}
 .choujiang-content h5{color: #F14955;font-size: 20px;margin-bottom: 12px;}
 .choujiang-namelist{width: 570px;height: 698px;background-color: #FFF6D9;border-radius: 21px;box-sizing: border-box;padding:29px 66px 23px 40px;}
 .choujiang-namelist li{margin-bottom: 17px;}
-.choujiang-rule {font-size: 16px;}
+.choujiang-rule {font-size: 16px;margin-bottom: 61px;}
 .choujiang-rule h5{font-size: 20px;margin-bottom: 36px;}
 /* 抽奖弹窗 */
 .fixed{position: fixed;width: 100%;height: 100%;background: rgb(0, 0, 0,0.6);z-index: 11;left: 0;top:0;}
@@ -463,6 +463,14 @@ ul li{list-style: none;}
 }
 
 /* 忘记密码 */
+.icon-lineleft{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.icon-lineright{
+    vertical-align: middle;
+    margin-left: 5px;
+}
 .forget_box{
     width: 500px;
     margin: 0 auto;
@@ -509,6 +517,7 @@ ul li{list-style: none;}
 .zixun-p2{margin-bottom: 6px;}
 .zixun-list{overflow: hidden;}
 .zixun-list li{overflow: hidden;padding:25px 0 19px;border-bottom: 1px dashed #E5E5E5;}
+.load-more{color: #a4a4a4;margin-top:19px;margin-bottom: 32px;text-align: center;}
 .share-box{float: right;}
 .share-wz{float: left;}
 .share-icons{float: left;}
@@ -897,7 +906,7 @@ ul li{list-style: none;}
 .duihuan-leftinner{text-align: center;margin-top: 90px;}
 .error{color:#F14955;font-size: 16px;}
 .duihuan-center{text-align: left;width: 140px;margin:60px auto 0;line-height: 30px;}  
-.duihuan-rule {font-size: 14px;}
+.duihuan-rule {font-size: 14px;margin-bottom: 40px;}
 .duihuan-rule h5{font-size: 14px;margin-bottom: 8px;color:#333;}
 .label-left{width: 87px;text-align: justify;color:#707070;font-size: 16px;float: left;}
 .duihuan-recordtitle{padding:28px 24px 28px 28px;background: #F9F1D6;width: 1144px;overflow: hidden;font-size: 14px;}

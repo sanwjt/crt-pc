@@ -1,4 +1,4 @@
-*{font-family:Microsoft YaHei}
+*{font-family:"Microsoft YaHei"}
 
 .header-vertial{
     height: 131px;
@@ -26,9 +26,9 @@
     width: 60px;
     text-align: center;
     line-height: 60px;
-    background-color: #FF8721;
+   vertical-align: middle;
     font-size: 18px;
-    color: #fff;
+ 
     margin-right: 19px;
 }
 .header_content h3{
@@ -110,7 +110,9 @@
     width: 1200px;
     margin: 0 auto;
 }
-
+.footera4{
+    color:#a4a4a4;
+}
 
 .footer ul{
     width: 1200px;
@@ -119,7 +121,6 @@
 }
 
 .footer li{
-    color: #A4A4A4;
     font-size: 16px;
     font-weight: 400;
     float: left;
@@ -134,7 +135,6 @@
 .footer div{
     font-weight: 400;
     font-size: 14px;
-    color: #A4A4A4;
     text-align: center;
 }
 .icon-footer{
