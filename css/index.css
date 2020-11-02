@@ -127,7 +127,15 @@ ul li{list-style: none;}
 .indexLeft{margin-top:262px;float:left;font-size: 42px;color:#fff;letter-spacing:2.33px}
 .fz-big{font-size: 50px;color:#fff;}
 .main_box.loginbg{background: url(../img/loginbg.png) no-repeat;background-size: cover;}
-.loginBox{float:right;margin-top:36px;width: 480px;height: 510px;background:rgb(255, 255, 255,0.6);box-sizing: border-box;padding: 36px 42px 43px;}
+.loginBox{
+    float:right;
+    margin-top:36px;
+    width: 480px;
+    height: 545px;
+    background:rgb(255, 255, 255,0.6);
+    box-sizing: border-box;
+    padding: 36px 42px 43px;
+}
 .loginBox .welcome{color: #FF8721;font-size: 40px;margin-bottom: 12px;}
 .login-title{overflow: hidden;width: 100%;margin-bottom: 32px;}
 .icon-fg{margin:0 5px;}
