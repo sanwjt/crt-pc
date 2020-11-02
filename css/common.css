@@ -1,7 +1,19 @@
+<<<<<<< HEAD
 *{font-family:Microsoft YaHei}
+=======
+
+.header-vertial{
+    height: 131px;
+}
+>>>>>>> f8c50f794d315029f2d97baef909b41d34bcfa78
 .header {
     width: 100%;
     border-bottom: 1px solid #E5E5E5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11111;
+    background: #fff;
 }
 
 .header .header_content{
@@ -46,6 +58,7 @@
     font-weight: 500;
     height: 28px;
     line-height: 32px;
+    color: #333;
 }
 .header_content .header_nav li.active{
     border-bottom: 2px solid #FF8721;
@@ -78,11 +91,18 @@
 
 .main_box{
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .main_box .main{
     width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer_box.fixedbottom{
+    position: fixed;
+    bottom: 0;
 }
 
 .footer_box{
@@ -102,7 +122,7 @@
 }
 
 .footer li{
-    color: #E5E5E5;
+    color: #A4A4A4;
     font-size: 16px;
     font-weight: 400;
     float: left;
@@ -117,7 +137,7 @@
 .footer div{
     font-weight: 400;
     font-size: 14px;
-    color: #E5E5E5;
+    color: #A4A4A4;
     text-align: center;
 }
 .icon-footer{
@@ -165,6 +185,8 @@ color:#999;
     padding-left: 18px;
     height: 20px;
     line-height: 20px;
+    background: url(../img/zhuyi.png) no-repeat 0 center;
+    background-size: 14px;
 }
 
 .common_input{

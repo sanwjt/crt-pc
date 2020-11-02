@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 12:36:33
- * @LastEditTime: 2020-10-11 18:54:34
+ * @LastEditTime: 2020-10-25 19:50:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/活动签到领取奖励.html
@@ -17,25 +17,27 @@
 </head> 
 <body>
     <!-- 顶部 -->
-    <div class="header">
-        <div class="header_content">
-            <div class="header_logo">logo</div>
-            <h3>CTR调研社区</h3>
-            <ul class="header_nav">
-                <li class="active">问卷</li>
-                <li>资讯</li>
-                <li>活动</li>
-                <li>抽奖</li>
-                <li>兑换</li>
-                <li>我的</li>
-            </ul>
-            <div class="header_message">
-                <div class="header_num ">2</div>
+    <div class="header-vertial">
+        <div class="header">
+            <div class="header_content">
+                <div class="header_logo">logo</div>
+                <h3>CTR调研社区</h3>
+                <ul class="header_nav">
+                    <li class="active">问卷</li>
+                    <li>资讯</li>
+                    <li>活动</li>
+                    <li>抽奖</li>
+                    <li>兑换</li>
+                    <li>我的</li>
+                </ul>
+                <div class="header_message">
+                    <div class="header_num ">2</div>
+                </div>
             </div>
         </div>
     </div>
     <!-- 内容 -->
-    <div class="main_box qiandao-bg">
+    <div class="main_box qiandao-bg pr">
         <div class="main oh">
             <div class="activity-content-qiandao pr">
                 <div class="qiandao-box">
@@ -105,9 +107,9 @@
         
           
         </div>
-    </div>
-     <!-- 底部 -->
-     <div class="footer_box" style="position: fixed;width: 100%;left: 0;z-index: 1111;bottom: 0;">
+
+             <!-- 底部 -->
+     <div class="footer_box" style="width: 100%;left: 0;z-index: 1111;bottom: 0; position: absolute;">
         <div class="footer mb20">
             <ul>
                 <li>用户协议</li>
@@ -120,8 +122,10 @@
             <div class="mt20">© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
         </div>
     </div>   
+    </div>
+
   
-    <div class="dialogo">
+    <div class="dialogo" style="display: none;">
         <div class="dialog_content" style="height: 220px;">
             <p class="dialogo_text">
                 签到成功获得10金豆
@@ -129,5 +133,15 @@
             <div class="close_btn"></div>
         </div>
     </div>
+    <!-- <script src="js/jquery.min.js"></script>
+    <script src="js/bottomnav.js"></script>     -->
+    <script src="js/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.close_btn').on('click',function(){
+            $('.dialogo').hide();
+        })
+     })
+    </script>
 </body>
 </html>

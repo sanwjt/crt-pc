@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 08:45:29
- * @LastEditTime: 2020-10-09 23:21:51
+ * @LastEditTime: 2020-10-25 21:29:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/我的.html
@@ -18,24 +18,26 @@
     <link rel="stylesheet" href="css/M_select.css">
 </head>
 <body>
-    <!-- 顶部 -->
-    <div class="header">
-        <div class="header_content">
-            <div class="header_logo">logo</div>
-            <h3>CTR调研社区</h3>
-            <ul class="header_nav">
-                <li class="active">问卷</li>
-                <li>资讯</li>
-                <li>活动</li>
-                <li>抽奖</li>
-                <li>兑换</li>
-                <li>我的</li>
-            </ul>
-            <div class="header_message">
-                <div class="header_num ">2</div>
+         <!-- 顶部 -->
+         <div class="header-vertial">
+            <div class="header">
+                <div class="header_content">
+                    <div class="header_logo">logo</div>
+                    <h3>CTR调研社区</h3>
+                    <ul class="header_nav">
+                        <li class="active">问卷</li>
+                        <li>资讯</li>
+                        <li>活动</li>
+                        <li>抽奖</li>
+                        <li>兑换</li>
+                        <li>我的</li>
+                    </ul>
+                    <div class="header_message">
+                        <div class="header_num ">2</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     <!-- 广告 -->
     <div class="advert_box">
         <div class="advert" style="background-color: #ccc;">
@@ -136,12 +138,13 @@
                     <div class="mine_content_card mb20">
                         <span class="card_title">其他信息 <span class="color721"> *完善更多信息，可获得更多奖励和项目机会哦~</span></span>
                         <div class="mine_content_inner">
-                            <div class="qt_title">
+                            <div class="qt_title oh">
                                 <span>私家车</span>
-                                <span>已完善</span>
+                                <span class="color721">已完善</span>
+                                <span class="openclosebtn">展开</span>
                             </div>
 
-                            <div class="mine_content_inner" style="background-color: #F9F9F9;">
+                            <div class="mine_content_inner" style="background-color: #F9F9F9; display: none;">
                                 <div style="width: 718px; margin: 0 auto;">
                                     <div class="common_form_item mb20" style="display: inline-block;">
                                         <div class="common_form_label" style="width: 160px; text-align: right;display: inline-block;vertical-align: middle;">您家是否有私家车: </div>
@@ -171,49 +174,56 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            <div>
+                                <div class="qt_title oh" style="margin-top: 28px;margin-bottom: 28px;">
+                                    <span>智能电视</span>
+                                    <span class="color721">未完善</span>
+                                    <span class="openclosebtn">展开</span>
+                                </div>
 
-                            <div class="qt_title" style="margin-top: 28px;margin-bottom: 28px;">
-                                <span>智能电视</span>
-                                <span class="color721">未完善</span>
-                            </div>
-                            <div class="mine_content_inner" style="background-color: #F9F9F9;">
-                                 <i class="qt_tv_title">4.您家电视符合以下哪些情况？【可多选】</i>
-                                 <div class="checkList">
-                                    <p><input type="checkbox" name="category" value="1" />可以通过连接网线或者wifi收看 </p>   
-                                    <p><input type="checkbox" name="category" value="2" />可以下载安装其他软件、APP </p>  
-                                    <p><input type="checkbox" name="category" value="2" />打开电视后，出来的不是电视频道，而是点播界面 </p>   
-                                    <p><input type="checkbox" name="category" value="2" />连接电视盒子收看 </p>    
-                                    <p><input type="checkbox" name="category" value="2" />以上都不符合 </p>    
-                                 </div>
-                                 <i class="qt_tv_title">5.您家智能电视品牌是？【可多选】</i>
-                                 <ul class="qt_tv_list">
-                                    <li class="active">海信</li>
-                                    <li>夏普</li>
-                                    <li>创维</li>
-                                    <li>索尼</li>
-                                    <li>三星</li>
-                                    <li>康佳</li>
-                                    <li>LG</li>
-                                    <li>小米</li>
-                                    <li>乐视</li>
-                                    <li>海尔</li>
-                                    <li>酷开</li>
-                                    <li>PPTV</li>
-                                    <li>先锋</li>
-                                    <li>其他品牌</li>
-                                </ul>
-                                <i class="qt_tv_title">6.最新购买的智能电视MAC地址最新购买的智能电视MAC地最新购买的智能电视MAC地最新购买的智能电视MAC地址：</i>
-                                <input class="common_input mb20" type="text" placeholder="请输入MAC地址" value="AEO04T2452D2312">
-                                <div class="common_form_item mb20">
-                                    <div class="common_form_label" style="width: 102px; text-align: right;">身份证人物照: </div>
-                                    <div class="pr dib">
-                                      <input class="mb20" style="color:#707070;" type="file" placeholder="选择照片">
+                                <div class="mine_content_inner" style="background-color: #F9F9F9;display: none;">
+                                    <i class="qt_tv_title">4.您家电视符合以下哪些情况？【可多选】</i>
+                                    <div class="checkList">
+                                       <p><input type="checkbox" name="category" value="1" />可以通过连接网线或者wifi收看 </p>   
+                                       <p><input type="checkbox" name="category" value="2" />可以下载安装其他软件、APP </p>  
+                                       <p><input type="checkbox" name="category" value="2" />打开电视后，出来的不是电视频道，而是点播界面 </p>   
+                                       <p><input type="checkbox" name="category" value="2" />连接电视盒子收看 </p>    
+                                       <p><input type="checkbox" name="category" value="2" />以上都不符合 </p>    
                                     </div>
-                                </div>
-                                <div class="origin-btn" style="width: 499px; margin: 0 auto;">
-                                    保存
-                                </div>
+                                    <i class="qt_tv_title">5.您家智能电视品牌是？【可多选】</i>
+                                    <ul class="qt_tv_list">
+                                       <li class="active">海信</li>
+                                       <li>夏普</li>
+                                       <li>创维</li>
+                                       <li>索尼</li>
+                                       <li>三星</li>
+                                       <li>康佳</li>
+                                       <li>LG</li>
+                                       <li>小米</li>
+                                       <li>乐视</li>
+                                       <li>海尔</li>
+                                       <li>酷开</li>
+                                       <li>PPTV</li>
+                                       <li>先锋</li>
+                                       <li>其他品牌</li>
+                                   </ul>
+                                   <i class="qt_tv_title">6.最新购买的智能电视MAC地址最新购买的智能电视MAC地最新购买的智能电视MAC地最新购买的智能电视MAC地址：</i>
+                                   <input class="common_input mb20" type="text" placeholder="请输入MAC地址" value="AEO04T2452D2312">
+                                   <div class="common_form_item mb20">
+                                       <div class="common_form_label" style="width: 102px; text-align: right;">身份证人物照: </div>
+                                       <div class="pr dib">
+                                         <input class="mb20" style="color:#707070;" type="file" placeholder="选择照片">
+                                       </div>
+                                   </div>
+                                   <div class="origin-btn" style="width: 499px; margin: 0 auto;">
+                                       保存
+                                   </div>
+                               </div>
                             </div>
+                       
+                            
+                            
                         </div>
                     </div>
 
@@ -250,7 +260,19 @@
                 "radius":"4px",
                 "Title":"请选择"
             });
+
+            $('.openclosebtn').on('click',function(){
+                var text = $(this).html();
+                if(text === '展开'){
+                    $(this).parent().siblings('.mine_content_inner').show();
+                    $(this).html('取消')
+                }else{
+                    $(this).parent().siblings('.mine_content_inner').hide();
+                    $(this).html('展开')
+                }
+            })
         })
     </script>
+    <script src="js/bottomnav.js"></script>      
 </body>
 </html>
