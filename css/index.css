@@ -1,5 +1,6 @@
 html,body,.container{width: 100%;height: 100%;font-size: 18px;font-family: '"Microsoft YaHei';}
 .theme-color{color:#FF8721}
+.bold{font-weight: bold;}
 .fl{float: left;}
 .fr{float: right;}
 *{margin:0;padding:0;}
@@ -137,7 +138,7 @@ ul li{list-style: none;}
 .login_form_left{display: inline-block;width: 100%;float: left;}
 .inputbox{width: 396px;height: 60px;line-height: 60px;font-size: 16px;padding-left: 21px;box-sizing: border-box;}
 .login{width: 480px;height: 590px;background: olivedrab;position: absolute;top: 168px;right: 197px;}
-.login-btn{width: 396px;height: 60px;line-height: 60px;font-size: 16px;background: #999999;color: #fff;}
+.login-btn{width: 396px;height: 60px;line-height: 60px;font-size: 16px;background: #ccc;color: #fff;}
 .icon-bottom{text-align: left;width: 396px;overflow: hidden;}
 .icon-list li{display: inline-block;vertical-align: middle;margin:0 0 0 17px;width: 40px;height: 40px}
 .icon-list li img{width:100%;display: inline-block;}
@@ -196,7 +197,7 @@ ul li{list-style: none;}
     margin-bottom: 32px; 
 }
 .choujiang-content h5{color: #F14955;font-size: 20px;margin-bottom: 12px;}
-.choujiang-namelist{width: 570px;height: 698px;background-color: #FFF6D9;border-radius: 21px;box-sizing: border-box;padding:29px 66px 23px 40px;}
+.choujiang-namelist{width: 570px;height: 698px;background-color: #FFF6D9;border-radius: 21px;box-sizing: border-box;padding:29px 66px 23px 40px;font-size: 16px;}
 .choujiang-namelist li{margin-bottom: 17px;}
 .choujiang-rule {font-size: 16px;margin-bottom: 61px;}
 .choujiang-rule h5{font-size: 20px;margin-bottom: 36px;}
@@ -874,7 +875,6 @@ ul li{list-style: none;}
 }
 .qiandao-ri p{
     font-size: 16px;
-    font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #333333;
     line-height: 22px;
@@ -1030,7 +1030,6 @@ ul li{list-style: none;}
     width: 128px;
     height: 22px;
     font-size: 16px;
-    font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #FF8721;
     line-height: 22px;
@@ -1083,7 +1082,6 @@ ul li{list-style: none;}
 }
 .dh_rule{
     font-size: 14px;
-    font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #333333;
     line-height: 20px;
