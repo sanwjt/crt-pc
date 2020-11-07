@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-04 14:17:52
- * @LastEditTime: 2020-10-25 21:31:53
+ * @LastEditTime: 2020-11-07 15:23:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/login.html
@@ -42,7 +42,12 @@
     <!-- 内容 -->
     <div class="main_box" style="margin-bottom: 218px;">
         <div class="main">
-            <p class="register_title">注册用户</p>
+            <div class="register_title oh">
+                <div class="title_line fl"></div>
+                注册用户
+                <div class="title_line fr"></div>
+            </div>
+            
             <div class="register_form">
                 <div class="register_form_left">
                     <div class="register_form_title">用户123456，您好</div>
@@ -83,28 +88,31 @@
                             <p class="common_form_error bt0 pa" style="bottom: -20px;">出生日期不能为空</p>
                         </div>
                     </div>
-                    <div class="common_form_item mb20" style="margin-top: 30px;">
+                    <div class="common_form_item mb20 pr" style="margin-top: 30px;">
                         <div class="select_label" style="width: 80px;vertical-align: middle;">城市: </div>
                         <div style="display:inline-block;width: 499px;vertical-align: middle;">
                             <select class="select02" placeholder="请选择">
-                            <option value="01">男</option>
-                            <option value="02">女</option>
+                                <option value="01">男</option>
+                                <option value="02">女</option>
                             </select>
+                            <p class="common_form_error bt0 pa" style="bottom: -20px;">城市不能为空</p>
                         </div>
                     </div>
-                    <div class="common_form_item mb20" style="margin-top: 30px;">
+                    <div class="common_form_item mb20 pr" style="margin-top: 30px;">
                         <div class="select_label" style="width: 80px;vertical-align: middle;">性别: </div>
                         <div style="display:inline-block;width: 499px;vertical-align: middle;">
-                            <select class="select02" placeholder="请选择">
-                            <option value="01">男</option>
-                            <option value="02">女</option>
+                            <select class="select03" placeholder="请选择">
+                                <option value="01">男</option>
+                                <option value="02">女</option>
                             </select>
+                            <p class="common_form_error bt0 pa" style="bottom: -20px;">性别不能为空</p>
                         </div>
                     </div>
 
-                    <p class="color333" style="font-size: 16px;"><input type="checkbox"  name="category" value="1" style="margin-right:10px"/>我已阅读并同意《服务条款》 </p> 
+                    <p class="color333" style="font-size: 16px;margin-top: 30px;">
+                        <input type="checkbox"  name="category" value="1" style="margin-right:10px"/>我已阅读并同意《服务条款》 </p> 
 
-                    <div class="oh">
+                    <div class="clearfix" style="margin-top: 40px;">
                         <div class="fl">
                             <div class="origin-btn" style="width: 280px;">立即注册</div>
                         </div>
@@ -139,6 +147,12 @@
         $(function(){
             
             $(".select02").M_select({
+                "ico":"2",
+                "radius":"4px",
+                "Title":"请选择"
+            });
+
+            $(".select03").M_select({
                 "ico":"2",
                 "radius":"4px",
                 "Title":"请选择"

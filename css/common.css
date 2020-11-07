@@ -169,7 +169,6 @@ color:#999;
 .common_form_label{
     height: 22px;
     font-size: 16px;
-    font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #707070;
     line-height: 22px;
@@ -398,6 +397,7 @@ color:#999;
     font-size: 12px;
     text-align: center;
     line-height: 24px;
+    height: 24px;
     width: 50%;
 }
 
@@ -496,3 +496,10 @@ color:#999;
 .clearfix:after { 
     clear: both; 
 } 
+
+.title_line{
+    height: 30px;
+    width: 538px;
+    background: url(../img/lineno.png) no-repeat center center;
+    background-size: 100%;
+}
