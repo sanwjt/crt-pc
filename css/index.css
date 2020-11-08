@@ -207,7 +207,7 @@ ul li{list-style: none;}
 }
 .choujiang-content h5{color: #F14955;font-size: 20px;margin-bottom: 12px;}
 .choujiang-namelist{width: 570px;height: 698px;background-color: #FFF6D9;border-radius: 21px;box-sizing: border-box;padding:29px 66px 23px 40px;}
-.choujiang-namelist li{margin-bottom: 17px;}
+.choujiang-namelist li{margin-bottom: 17px;font-size: 16px;}
 .choujiang-rule {font-size: 16px;margin-bottom: 61px;}
 .choujiang-rule h5{font-size: 20px;margin-bottom: 36px;}
 /* 抽奖弹窗 */
@@ -293,20 +293,85 @@ ul li{list-style: none;}
 .icon-cut{margin:0 8px;}
 .fankui-breadnow{font-size: 22px;}
 .fankui-list{width: 1200px;font-size: 14px;color: #333;overflow: hidden;}
-.fankui-list li{border:1px solid #ccc;box-sizing: border-box;padding:24px 0 24px 31px;position: relative;overflow: hidden;margin-bottom: 24px;}
+.fankui-list .fankui-listli{border:1px solid #ccc;box-sizing: border-box;padding:24px 0 24px 31px;position: relative;overflow: hidden;margin-bottom: 24px;}
 .avtar{width: 65px;height: 65px;background:orange;border-radius: 50%;margin-right: 12px;}
-.fankui-img{overflow: hidden;}
-.fankui-img li{width: 79px;height: 79px;background: orange;float: left;margin-right: 20px;}
+.fankui-img{overflow: hidden;margin-bottom: 12px;}
+.fankui-img li{width: 79px;height: 79px;background: orange;float: left;margin-right: 20px;border: none;}
+.fankui-img li img{width: 100%;display: block;}
 .date{font-size: 14px;color: #757575;}
 .fankui-answer{background: #FFEDD1;padding:20px 20px 20px 14px;position: relative;overflow: hidden;}
 .icon-answer{position: absolute;right: 11px;top:11px;}
 .fankui-name{color: #757575;margin-bottom: 8px;}
 .fankui-tips{font-size:16px;margin-bottom: 20px;}
-.fankui-message{margin-bottom: 12px;}
-.fankui-img{margin-bottom: 12px;}
+.fankui-message{margin-bottom: 12px;font-size: 16px;}
 .answer-avtar{margin-right: 12px;}
 .answer-description{margin-bottom: 12px;}
+.fankui-answerfr{
+    width: 689px;
+    float: left;
+}
+.icon-question{
+width: 63px;
+height: 29px;
+line-height: 29px;
+text-align: center;
+background: #7EDCFF;
+border-radius: 4px;
+color:#fff;
+}
+.icon-sent{
+    width: 63px;
+height: 29px;
+line-height: 29px;
+background: #FF8721;
+border-radius: 4px;
+color:#fff;
+text-align: center;
+    }
+    .warnningp{
+        color:#F14955;
+    }
+    .warnningp img{
+        vertical-align: middle;
+        margin-right: 4px;
+        width: 14px;
+        height: 14px;
+    }
+.icon-sent img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.sentbox{
 
+    background: #F7F7F7;
+    border-radius: 4px;
+    margin-top: 24px;
+    padding:21px 30px 24px 32px;
+}
+.sentbox p{
+    margin-bottom: 38px;
+}
+.fankui-sj{
+    position: relative;
+    border-bottom: rgb(255, 237, 209) 10px solid;
+    border-right: transparent 10px solid;
+    border-top: transparent 10px solid;
+    border-left: transparent 10px solid;
+    width: 0;
+    height: 0;
+    transform: translate(20px,0);
+}
+.fankui-sj:after {
+    position: absolute;
+    content: "";
+    border-bottom: rgb(255, 237, 209) 10px solid;
+    border-right: transparent 10px solid;
+    border-top: transparent 10px solid;
+    border-left: transparent 10px solid;
+    width: 0;
+    height: 0;
+    transform: translate(20px,0);
+}
 .fk_form{
     margin-top: 20px;
     height: 58px; 
@@ -314,6 +379,9 @@ ul li{list-style: none;}
 }
 .fk_form div{
     vertical-align: middle;
+}
+.fankui-answerbox{
+    position: relative;
 }
 /* 搜索 */
 .search-banner{margin-bottom: 36px;}
@@ -905,23 +973,30 @@ ul li{list-style: none;}
 /* 兑换 */
 .duihuan-banner{margin-bottom: 36px;}
 .duihuan-banner img{width: 100%;display: block;}
-.duihuan-content{padding:24px 0 20px 24px;overflow: hidden;font-size: 16px;}
+.duihuan-content{padding:24px 0 20px 22px;overflow: hidden;font-size: 16px;border:1px solid #F9F1D6}
 .duihuan-left{width: 548px;height: 414px;background:url(../img/duihuan-bg.png) no-repeat;position: relative;margin-right: 28px;float: left;}
 .duihuan-right{float: left;width: 600px;font-size: 16px;}
-.duihuan-righttop{width: 128px;height: 40px;position: absolute;right: 10px;top:3px;line-height: 40px;color:#fff;text-align: center;}
-.duihuan-btn{width: 485px;height: 60px;line-height: 60px;background: #FF8721;color: #fff;text-align: center;}
+.duihuan-righttop{width: 128px;height: 40px;position: absolute;right: 10px;top:3px;line-height: 40px;color:#fff;text-align: center;font-size: 20px;}
+.duihuan-btn{width: 485px;height: 60px;line-height: 60px;background: #FF8721;color: #fff;text-align: center;font-size: 18px;}
 .duihuan-inner{overflow: hidden;margin-bottom: 25px;}
 .duihuan-leftinner{text-align: center;margin-top: 90px;}
 .error{color:#F14955;font-size: 16px;}
 .duihuan-center{text-align: left;width: 140px;margin:60px auto 0;line-height: 30px;}  
-.duihuan-rule {font-size: 14px;margin-bottom: 40px;}
+.duihuan-rule {font-size: 14px;color:#333}
+.duihuan-rule p{line-height: 20px;}
 .duihuan-rule h5{font-size: 14px;margin-bottom: 8px;color:#333;}
 .label-left{width: 87px;text-align: justify;color:#707070;font-size: 16px;float: left;}
+/* .label-left::after{
+    display: inline-block;
+    width: 100%;
+    content: '';
+} */
 .duihuan-recordtitle{padding:28px 24px 28px 28px;background: #F9F1D6;width: 1144px;overflow: hidden;font-size: 14px;}
 .duihuan-recordavtar{width: 65px;height: 65px;background: orange;border-radius: 50%;margin-right: 8px;float: left;display: inline-block;}
 .duihuan-recordname{overflow: hidden;margin-right: 70px;float: left;margin-top: 4px;}
 .duihuan-recordname li{color:#757575}
 .duihuan-recordname li:first-child{margin-bottom: 16px;}
+.colora4a4{color:#a4a4a4;}
 .duihuan-recordname li .duihuan_btn{width: 64px;height: 19px;line-height: 19px;text-align: center;border-radius: 4px;background:#FF8721;color:#fff;font-size: 12px;display: inline-block;}
 .duihuan-recordcash{
     width: 255px;
@@ -946,7 +1021,8 @@ ul li{list-style: none;}
 }
 .record-left{float: left;width: 20px;margin-right: 10px;}
 .record-mid{width: 100px;float: left;}
-.record-midtop{margin-bottom: 2px;font-size: 33px;margin-top: 14px;}
+.record-midtop{font-size: 36px;margin-top: 5px;}
+.record-midbottom{font-size: 12px;}
 .record-icon{vertical-align: middle;margin-bottom: 20px;}
 .errortips{color:#F14955;font-size: 16px;margin-bottom: 20px;}
 .form-p{margin-bottom: 20px;}
@@ -1082,6 +1158,7 @@ ul li{list-style: none;}
     right: 26px;
     top:10px;
     color: #fff;
+    font-size: 20px;
 }
 .dh_rule i{
     height: 40px;
@@ -1096,7 +1173,7 @@ ul li{list-style: none;}
     letter-spacing: 1px;
     padding-left: 27px;
     padding-right: 27px;
-    margin-bottom: 27px;
+  
 }
 .dh-action{
     margin-left: 150px;
