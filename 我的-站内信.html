@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 08:45:29
- * @LastEditTime: 2020-11-07 16:12:25
+ * @LastEditTime: 2020-11-08 10:32:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/我的.html
@@ -148,16 +148,19 @@
 
                             <ul class="jn_table_list" style="margin-top: 30px;">
                                 <li> 
-                                    <span class="jn_user">系统管理员</span>
-                                    <span class="jn_mess">竞拍成功通知</span>
-                                    <span class="jn_time">2019/4/29 10:10</span>
-                                    <span class="jn_status">已读</span>
-                                    <span class="jn_action">删除</span>
+                                    <div class="jn_list_tab">
+                                        <span class="jn_user">系统管理员</span>
+                                        <span class="jn_mess">竞拍成功通知</span>
+                                        <span class="jn_time">2019/4/29 10:10</span>
+                                        <span class="jn_status">已读</span>
+                                        <span class="jn_action">删除</span>
+                                    </div>
                                     <div class="jn_list_detail pr">
                                         <p><span class="jn_username">发件人</span><span>系统管理员</span></p>
                                         <p><span class="jn_username">标题</span><span>没有问题，就是测试一下站内信功能</span></p>
-                                        <p><span class="jn_username">正文</span><span>测试测试测试</span></p>
+                                        <p style="margin:0"><span class="jn_username">正文</span><span>测试测试测试</span></p>
                                         <div class="jn_close_btn pa">收起</div>
+                                        <div class="jn_sanjiao"></div>
                                     </div>
                                 </li>
                                 <li> 
@@ -198,6 +201,16 @@
     </div>      
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/bottomnav.js"></script>      
+    <script src="js/bottomnav.js"></script>     
+    <script>
+        $(function(){
+            $('.jn_list_tab').on('click',function(){
+                $(this).siblings('.jn_list_detail').show();
+            });
+            $('.jn_close_btn').on('click',function(){
+                $(this).parent().hide();
+            })
+        })
+    </script> 
 </body>
 </html>

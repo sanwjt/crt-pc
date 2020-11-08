@@ -1360,11 +1360,14 @@ ul li{list-style: none;}
     overflow: hidden;
     border: 1px solid #E5E5E5;
     margin-top: 16px;
+    position: relative;
 }
 
 .mine_info .mine_nav{
     width: 210px;
     border-right: 1px solid #E5E5E5;
+    position: absolute;
+    height: 100%;
 }
 .mine_info .mine_nav ul{
     margin: 0 auto;
@@ -1413,12 +1416,27 @@ ul li{list-style: none;}
     background: url(../img/shezhi.png) no-repeat 0 center;
 }
 
+.mine_info .mine_nav ul li.active i.zh_def{
+    background: url(../img/shezhixuanzhong.png) no-repeat 0 center;
+    background-size: 16px;
+}
+
 .mine_info .mine_nav ul i.jc_def{
     background: url(../img/jichuxinxi.png) no-repeat 0 center;
 }
 
+.mine_info .mine_nav ul li.active i.jc_def{
+    background: url(../img/jcxuanzhong.png) no-repeat 0 center;
+    background-size: 16px;
+}
+
 .mine_info .mine_nav ul i.rz_def{
     background: url(../img/renzhengxinxi.png) no-repeat 0 center;
+}
+
+.mine_info .mine_nav ul li.active i.rz_def{
+    background: url(../img/renzhengxuanzhong.png) no-repeat 0 center;
+    background-size: 16px;
 }
 
 
@@ -1428,7 +1446,7 @@ ul li{list-style: none;}
 
 .mine_info .mine_nav ul li.active i.qt_def{
     background: url(../img/qitaxuanzhong.png) no-repeat 0 center;
-    background-size: cover;
+    background-size: 16px;
 
 }
 
@@ -1439,7 +1457,7 @@ ul li{list-style: none;}
 
 .mine_info .mine_nav ul li.active i.jj_def{
     background: url(../img/jiangjinxuanzhong.png) no-repeat 0 center;
-    background-size: cover;
+    background-size: 16px;
 }
 
 
@@ -1447,6 +1465,12 @@ ul li{list-style: none;}
 .mine_info .mine_nav ul i.jn_def{
     background: url(../img/zhanneixin.png) no-repeat 0 center;
 }
+
+.mine_info .mine_nav ul li.active i.jn_def{
+    background: url(../img/znxuanzhong.png) no-repeat 0 center;
+    background-size: 16px;
+}
+
 
 .mine_content {
     padding:18px;
@@ -1823,6 +1847,7 @@ ul li{list-style: none;}
     background-color: #FFEDD1;
     margin-top: 20px;
     position: relative;
+    display: none;
 }
 
 .jn_list_detail p{
@@ -1842,6 +1867,19 @@ ul li{list-style: none;}
     color: #FF8721;
     font-size: 16px;
     cursor: pointer;
+    padding-right: 13px;
+    background: url(../img/shouqiicon.png) no-repeat right center;
+    background-size: 13px;
+}
+
+.jn_sanjiao{
+    position: absolute;
+    top:-15px;
+    width: 0;
+    height: 0;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: transparent transparent #FFEDD1;
 }
 
 .qt_title{
@@ -1879,6 +1917,7 @@ ul li{list-style: none;}
     font-size: 16px;
     position: relative;
     height: 26px;
+    margin-bottom: 16px;
 }
 .qt_switch .switch{
     position: absolute;

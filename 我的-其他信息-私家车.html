@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 08:45:29
- * @LastEditTime: 2020-11-07 16:25:25
+ * @LastEditTime: 2020-11-08 11:33:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/我的.html
@@ -170,15 +170,19 @@
                                         </div>
                                     </div>
     
-                                    <div class="common_form_item mb20">
+                                    <div class="common_form_item">
                                         <div class="common_form_label" style="width: 160px; text-align: right;">上传与爱车合照: </div>
                                         <div class="pr dib">
                                           <input class="mb20" style="color:#707070;" type="file" placeholder="选择照片">
                                         </div>
                                     </div>
-                                    <div class="origin-btn" style="width: 499px; margin: 0 auto;">
-                                        保存
+                                    <div style="margin-left: 162px;">
+                                        <span class="color721" style="font-size: 14px; margin-bottom: 12px;display: block;">我们会添加水印加密存储，请放心</span>
+                                        <div class="origin-btn" style="width: 499px;">
+                                            保存
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                             
@@ -223,17 +227,28 @@
                                          <input class="mb20" style="color:#707070;" type="file" placeholder="选择照片">
                                        </div>
                                    </div>
-                                   <div class="origin-btn" style="width: 499px; margin: 0 auto;">
-                                       保存
-                                   </div>
+                                   <div style="margin-left: 162px;">
+                                    <span class="color721" style="font-size: 14px; margin-bottom: 12px;display: block;">*我们会添加水印加密存储，请放心</span>
+                                    <div class="origin-btn" style="width: 499px;">
+                                        保存
+                                    </div>
+                                </div>
                                </div>
                             </div>
 
                             <div class="oh pr qt_switch">
                                 <span class="color333">是否愿意接受电话访问</span>
                                 <div class="switch_btn switch">
-                                    <div class="fl">不愿意</div>
+                                    <div class="fl" style="display: none;">不愿意</div>
                                     <div class="fr">我愿意</div>
+                                </div>
+                            </div>
+
+                            <div class="oh pr qt_switch">
+                                <span class="color333">是否愿意接受电话访问</span>
+                                <div class="switch_btn switch">
+                                    <div class="fl">不愿意</div>
+                                    <div class="fr" style="display: none;">我愿意</div>
                                 </div>
                             </div>
                         </div>
@@ -283,6 +298,10 @@
                     $(this).html('展开')
                 }
             })
+
+            $('.qt_tv_list li').on('click',function(){
+                $(this).addClass('active')
+            });
         })
     </script>
     <script src="js/bottomnav.js"></script>      
