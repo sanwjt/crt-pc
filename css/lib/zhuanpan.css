@@ -29,6 +29,10 @@ table {
             background-size: 100%;
         }
 
+        .draw .item.active .name{
+            color:#fff;
+        }
+
     .draw .img {
         display: table-cell;
         width: 150px;

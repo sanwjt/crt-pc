@@ -14,12 +14,22 @@
 	line-height: 52px;
 	color:#666666;
 	font-weight: 400;
+	font-size: 16px;
 }
 .join_zp .join_zp_c{
 	color: #333333;
 	cursor: pointer;
 	height: 52px;
 	font-size: 16px;
+}
+
+.join_zp .join_zp_c.bgf7{
+	background-color: #F7F7F7;
+}
+
+.join_zp .join_zp_c .error{
+	font-size: 10px;
+	color:#F14955;
 }
 
 .join_zp .join_zp_n{

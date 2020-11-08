@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 08:45:29
- * @LastEditTime: 2020-11-07 16:16:09
+ * @LastEditTime: 2020-11-08 13:53:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/我的.html
@@ -159,7 +159,7 @@
                     <div class="mine_content_card">
                         <span class="card_title">可参加调研项目</span>
                         <ul class="mine_research">
-                            <li>
+                            <li class="pr">
                                 <div class="mine_research_img fl">
                                     <img src="img/diaoyann.png" alt="">
                                 </div>
@@ -171,8 +171,9 @@
                                         <div class="mine_research_add">立即参与</div>
                                     </div>
                                 </div>
+                                <img class="biaoqian" src="./img/biaoqian1.png" alt="">
                             </li>
-                            <li>
+                            <li class="pr">
                                 <div class="mine_research_img fl">
                                     <img src="img/diaoyann.png" alt="">
                                 </div>
@@ -184,6 +185,22 @@
                                         <div class="mine_research_add">立即参与</div>
                                     </div>
                                 </div>
+                                <img class="biaoqian" src="./img/biaoqian2.png" alt="">
+                            </li>
+
+                            <li class="pr">
+                                <div class="mine_research_img fl">
+                                    <img src="img/diaoyann.png" alt="">
+                                </div>
+                                <div class="mine_research_content fr">
+                                    <h5>调研：【商业调查】P1235400</h5>
+                                    <div class="mine_research_content_detail">
+                                        <p>奖励发放：2019/06/21</p>
+                                        <p>奖励发放：2019/06/21</p>
+                                        <div class="mine_research_add">立即参与</div>
+                                    </div>
+                                </div>
+                                <img class="biaoqian" src="./img/biaoqian3.png" alt="">
                             </li>
                         </ul>
                     </div>
@@ -206,7 +223,26 @@
             <div class="mt20">© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
         </div>
     </div>  
+    <div class="dialogo">
+        <div class="dialog_content">
+            <p class="dialogo_text" style="text-align: left; font-size: 18px;width: 505px;">
+              用户您好:
+              <br>
+               <span style="display: block;margin-top: 40px;margin-bottom: 156px;">后台监测到该账号用户近期兑换异常，为了您账号内资金 安全，请尽快修改登录密码并绑定验证手机，谢谢~</span>
+               <span style="display: block;text-align: right;">CTR调研社区</span>
+            </p>
+  
+            <div class="close_btn"></div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bottomnav.js"></script>            
+    <script>
+        $(function(){
+            $('.close_btn').on('click',function(){
+                $('.dialogo').hide();
+            })
+         })
+        </script>
 </body>
 </html>
