@@ -142,14 +142,33 @@ ul li{list-style: none;}
 .login-content p{margin-bottom: 20px;}
 .login-btn2{width: 396px;height: 60px;line-height: 60px;color: #fff;background: #FF8721;text-align: center;font-size: 18px;}
 .login-left p{display: inline-block;}
+.login-left p.theme-color{font-weight: 600;}
+.login-right p{
+    font-weight: 600;
+}
 .login_form_left{display: inline-block;width: 100%;float: left;}
 .inputbox{width: 396px;height: 60px;line-height: 60px;font-size: 16px;padding-left: 21px;box-sizing: border-box;}
 .login{width: 480px;height: 590px;background: olivedrab;position: absolute;top: 168px;right: 197px;}
-.login-btn{width: 396px;height: 60px;line-height: 60px;font-size: 16px;background: #999999;color: #fff;}
+.login-btn{width: 396px;height: 60px;line-height: 60px;font-size: 16px;background: #ccc;color: #fff;}
 .icon-bottom{text-align: left;width: 396px;overflow: hidden;}
 .icon-list li{display: inline-block;vertical-align: middle;margin:0 0 0 17px;width: 40px;height: 40px}
 .icon-list li img{width:100%;display: inline-block;}
 .login-width{width: 396px;}
+.gzMask{
+    position: absolute;
+    width: 216px;
+    top:65px;
+    right: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+.gzMask p{
+    margin-bottom: 10px;
+}
+.gzMask img{
+    width: 216px;
+
+}
 /* 注册 */
 .register_title{
     font-size: 22px;
@@ -391,15 +410,29 @@ text-align: center;
 /* .search-bar input{width: 515px;height: 60px;line-height: 60px;padding-left: 28px;box-sizing: border-box;} */
 .icon-search{width: 24px;height: 24px;vertical-align: middle;position: absolute;right: 28px;top: 20px;}
 .search-banner img{width: 100%;display: block;}
-.search-title{margin:21px 0 65px}
+.search-title{margin:21px 0 65px;font-size: 14px;}
 .search-box{overflow: hidden;text-align: center;overflow: hidden;margin-right: -141px;}
+
 .search-box li{width: 78px;float: left;margin:0 141px 89px 0}
-.search-question{width: 1200px;height: 283px;border:1px solid #E5E5E5;margin-bottom: 30px;}
+
+.search-box li p{
+    font-size: 16px;
+}
+.search-question{width: 1200px;height: 283px;border:1px solid #E5E5E5;margin-bottom: 30px;box-sizing: border-box;}
 .search-question h6{width: 100%;height: 52px;line-height: 52px;background:#F7F7F7;font-size: 16px;text-align: center;color:#666;}
 .search-question ul .fl{ margin-right: 96px;}
 .search-questionbottom {margin-right: -96px; padding: 21px;}
 .search-questionbottom li ul li:first-child{color: #666}
-.search-list{color:#333;}
+.search-list{
+    color:#333;
+    font-size: 16px;
+}
+.search-list li:first-child{
+    margin-bottom: 21px;
+}
+.search-list li{
+    margin-bottom: 9px;
+}
 /* 搜索结果 */
 .result-titleleft{height: 52px;background: #F9F9F9;line-height: 52px;padding-left: 20px;}
 .result-titleright{height: 52px;background: #F9F9F9;line-height: 52px;}
@@ -409,6 +442,7 @@ text-align: center;
     overflow: hidden;
     font-size: 16px;
     border:1px solid #E5E5E5;
+    margin-top: 67px;
 }
 
 .result-left{width: 180px;background: #F7F7F7;font-size: 16px;color: #707070;font-size: 16px;line-height: 30px;padding:16px 0 139px 20px;}
@@ -449,11 +483,36 @@ text-align: center;
 .wenquaning1-info{padding:34px 14px 20px;font-size: 18px;text-align: center;}
 /* 进行时2 */
 .wenquaning-list2 {text-align: left;margin-right: 16px;}
-.wenquaning-list2 li{width: 378px;height: 315px;background: #f7f7f7;position: relative;float:left;margin-right: 16px;margin-bottom: 16px;}
+.wenquaning-list2 li{
+    width: 378px;
+    height: 315px;
+    background: #f7f7f7;
+    position: relative;
+    float:left;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.wenquaning-list2 li:hover{
+    background-color: #fff;
+}
+
+.wenquaning-list2 li:hover .num{
+  color: #FF8721;
+}
+
 .icon-douh{position: absolute;left: 16px;top:21px;}
-.wenquaning-right{position: absolute;top: 0;right: 0;}
+
+.wenquaning-right{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.wenquaning-right img{
+    width: 86px;
+}
 .wenquaning-info{position: absolute;width: 342px;top: 77px;left: 16px;}
-.num{font-size: 48px;margin-bottom: 12px;}
+.num{font-size: 48px;margin-bottom: 12px;color: #333;}
 .wenquaning-tips{font-size: 18px;margin-bottom: 12px;}
 .date-time{margin-bottom: 30px;font-size: 14px;color:#666;}
 .wenquaning-btn{margin:0 auto;width: 177px;height: 43px;line-height: 43px;background:#FF8721;color:#fff;border-radius: 21px;text-align: center;}
@@ -708,6 +767,17 @@ text-align: center;
 /* 活动 */
 /* .activity-content {width: 100%;background: url(../img/activity-top.png) no-repeat;background-size: center center}
 .activity-content .inner{width: 100%;background: url(../im/activity-bg.png) no-repeat;background-size: center center} */
+.activity-list li{
+    width: 1200px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.activity-list li img{
+    width: 100%;
+}
+
 .activity-content{
     height: 1840px;
     background: url(../img/activity-bg.png) no-repeat;
@@ -738,6 +808,9 @@ text-align: center;
     padding:22px;
 }
 .activity-bottom{background: #fff;padding:8px 0;}
+.activity-bottom table{
+    font-size: 16px;
+}
 .activity-bottom table tr td:nth-child(3){
     color: #FF8721;
 }
@@ -770,7 +843,10 @@ text-align: center;
  }
  .activity-rule ol{margin-left: 20px;}
  .activity-rule h5{font-size: 14px;margin-bottom: 8px;color:#333;}
- .activity-p1{line-height: 30px;}
+ .activity-p1{
+     line-height: 30px;
+     font-size: 16px;
+}
  .activity_title{
     height: 50px;
     font-size: 36px;
@@ -822,10 +898,10 @@ text-align: center;
 /* 签到 */
 .qiandao-bg{
     background: url(../img/qiandaobg.png) no-repeat;
-    background-size:cover;
+    background-size:100%;
 }
 .activity-content-qiandao{
-    margin-top: 290px;
+    margin-top: 184px;
     background: url(../img/riliyangshi.png) no-repeat;
     background-size: cover;
     padding: 0 68px;
@@ -836,8 +912,8 @@ text-align: center;
 .qiandao_rili{
     position: absolute;
     width: 354px;
-    top:-80px;
-    right: -40px;
+    top:-100px;
+    right: 88px;
 }
 .qiandao-box{overflow: hidden;}
 .qiandao-list{
@@ -1619,6 +1695,15 @@ text-align: center;
     margin-bottom: 20px;
 }
 
+.mine_research li .biaoqian{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 90px;
+    left: -10px;
+    top: -10px;
+}
+
 .mine_research .mine_research_img img{
     width: 100%;
 }
@@ -1768,6 +1853,31 @@ text-align: center;
     color: #707070;
     line-height: 22px;
     letter-spacing: 1px;
+}
+.id_upload div{
+  width: 246px;
+  float: left;
+  color:#FF8721;
+  text-align: center;
+  font-size: 16px;
+}
+
+.id_upload div:first-child{
+    margin-left: 160px;
+    margin-right: 100px;
+    background: url(../img/id1.png) no-repeat;
+    background-size: 100%;
+}
+
+.id_upload div:last-child{
+    background: url(../img/id2.png) no-repeat;
+    background-size: 100%;
+}
+
+.id_upload div section{
+    height: 155px;
+    width: 246px;
+    margin-bottom: 10px;
 }
 .shiming_tips{
     width: 762px;
@@ -1959,6 +2069,26 @@ text-align: center;
     border-color: transparent transparent #FFEDD1;
 }
 
+.jn_sanjiao{
+    position: absolute;
+    top:-15px;
+    width: 0;
+    height: 0;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: transparent transparent #FFEDD1;
+}
+
+.sousuo_sanjiao{
+    position: absolute;
+    top:-15px;
+    width: 0;
+    height: 0;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: transparent transparent #F7F7F7;
+}
+
 .qt_title{
     font-size: 16px;
 }
@@ -2076,7 +2206,7 @@ text-align: center;
 .dj-record{background: #F7F7F7;margin-bottom: 20px;padding:12px 20px 58px 20px ;border-radius: 4px;}
 /* .dj-record table tr td:nth-child(1){width: 148px;height: 22px;line-height: 22px;}
 .dj-record table tr td:nth-child(2){width: 230x;height: 22px;line-height: 22px;} */
-.dj-recordinner{overflow: hidden;padding:32px 0 32px 24px;background: #fff;border-radius: 4px;}
+.dj-recordinner{overflow: hidden;padding:32px 24px 32px 24px;background: #fff;border-radius: 4px;}
 .dj-innerleft{float: left;margin-right: 77px;}
 .dj-innerright{float: left;}
 .dj-innerleft li,.dj-innerright li{margin-bottom: 16px;color: #333;}
@@ -2088,5 +2218,9 @@ text-align: center;
 .dj-howinner li ul li{margin-bottom: 16px;}
 .dj-howinnerright li{width: 50px;height: 24px;line-height: 24px;background: #FF8721;border-radius: 4px;color:#fff;font-size: 12px;text-align: center;}
 .dj-quanyiinenr{overflow: hidden;padding:20px;background: #fff;border-radius: 4px;}
+.dj-quanyiinenr table{border: 1px solid #FF8721;}
+.dj-quanyiinenr table tbody tr:first-child{border-bottom: 1px solid #FF8721;}
+.dj-quanyiinenr table tbody tr td:first-child{border-right: 1px solid #FF8721;}
 .dj-quanyiinenr table tr td{padding:10px;}
 .dj-quanyiinenr table tr:nth-child(2n-1){background: #F7F7F7;}
+

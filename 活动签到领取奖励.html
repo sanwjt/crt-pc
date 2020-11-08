@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 12:36:33
- * @LastEditTime: 2020-10-25 21:26:32
+ * @LastEditTime: 2020-11-08 22:22:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/活动签到领取奖励.html
@@ -98,7 +98,7 @@
                         <h4>兑换规则</h4>
                         <p>1.每7天一个签到周期，连续签到天数可获得不同奖励</p>
                         <p>2.网站页面签到与微站点签到同步，您可以在微站点签到，网页上同步显示签到。</p>
-                        <div class="disable-btn margin_center" style="width: 280px;margin-top: 127px;">领取奖励</div>
+                        <div class="origin-btn margin_center" style="width: 280px;margin-top: 127px;">领取奖励</div>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@
     </div>
 
   
-    <div class="dialogo">
+    <div class="dialogo" style="display: none;">
         <div class="dialog_content" style="height: 220px;">
             <p class="dialogo_text">
                 签到成功获得10金豆
@@ -133,12 +133,31 @@
         </div>
     </div>
 
+    <div class="dialogo">
+        <div class="dialog_content" style="height: 407px;">
+            <p class="dialogo_text" style="width: 479px;">
+                您有一个商业调查未完成，请先进行商业调查再签到。
+            </p>
+            <p class="dialogo_text color721" style="margin-top: 33px;color: #FF8721;">
+                【高分调查】P180001
+            </p>
+            <div class="origin-btn margin_center" style="width: 177px; margin-top: 62px;">
+                立即参与 >>
+            </div>
+            <div class="close_btn"></div>
+        </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script>
     $(function(){
         $('.close_btn').on('click',function(){
             $('.dialogo').hide();
+        })
+
+        $('.origin-btn').on('click',function(){
+            $(this).addClass('disable-btn');
+            $(this).html('今日已签到')
         })
      })
     </script>
