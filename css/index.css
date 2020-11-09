@@ -550,10 +550,11 @@ color:#fff;
 .wenquan-p3{margin-bottom: 36px;}
 .wenquan-p3 span{width: 177px;height:60px;line-height: 60px;background: #FF8721;color:#fff;display: inline-block;text-align: center;}
 .wenquan-p3 input{
-    width: 758px;
+    width: 743px;
     height: 60px;
     line-height: 60px;
     padding-left: 15px;
+    padding-right: 15px;
     font-size: 16px;
     color: #333;
     border: 1px solid #CCCCCC;
@@ -863,6 +864,9 @@ color:#fff;
      /* position: absolute; */
      bottom: 0;
      margin-top: 64px;
+ }
+ .activity-rule li{
+     font-size: 16px;
  }
  .activity-rule ol{margin-left: 20px;}
  .activity-rule h5{font-size: 14px;margin-bottom: 8px;color:#333;}
@@ -2219,6 +2223,8 @@ color:#fff;
 .page-listbox li{float: left;color:#757575;margin-right: 10px;}
 
 /* 我的等级记录 */
+.dj-innerright .orign-num{color:#FF8721}
+.dj-innerright .blue-num{color:#7EDCFF}
 .mine-djbox{overflow: hidden;margin-top: 41px;}
 .mine-djleft{
     width: 167px;
