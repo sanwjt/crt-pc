@@ -21,6 +21,10 @@
         width: 100%;
         height: auto;
     }  
+    .swiper-container{
+    --swiper-theme-color: #ff6600;
+    --swiper-pagination-color: #00ff33;/* 两种都可以 */
+  }
     </style>
 </head> 
 <body>
@@ -49,6 +53,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="img/duihuan-banner.png" alt=""></div>
             <div class="swiper-slide"><img src="img/lunbo2.png" alt=""></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     <!-- 内容 -->
@@ -62,7 +67,7 @@
                 <div class="duihuan-recordtitle">
                     <!-- 头像 -->
                     <div class="duihuan-recordavtar">
-                        <img src="img/duihuan-tx.png" alt="">
+                        <img src="img/tx.png" alt="">
 
                     </div>
                     <!-- 姓名 -->
@@ -205,6 +210,7 @@
           // 如果需要分页器
           pagination: {
             el: '.swiper-pagination',
+            
           },
           
           // 如果需要前进后退按钮

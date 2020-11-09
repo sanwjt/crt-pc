@@ -318,6 +318,9 @@ ul li{list-style: none;}
 .fankui-img li{width: 79px;height: 79px;background: orange;float: left;margin-right: 20px;border: none;}
 .fankui-img li img{width: 100%;display: block;}
 .date{font-size: 14px;color: #757575;}
+.fankui-rightbox{
+    float: left;
+}
 .fankui-answer{
     background: #FFEDD1;
     padding:20px 20px 20px 14px;
@@ -343,6 +346,10 @@ text-align: center;
 background: #7EDCFF;
 border-radius: 4px;
 color:#fff;
+}
+.icon-question img{
+    vertical-align: middle;
+    margin-right: 5px
 }
 .icon-sent{
     width: 63px;
@@ -669,7 +676,8 @@ color:#fff;
 .zixun-p2{margin-bottom: 10px;}
 .zixun-list{overflow: hidden;}
 .zixun-list li{overflow: hidden;padding:25px 0 19px;border-bottom: 1px dashed #E5E5E5;}
-.load-more{color: #a4a4a4;margin-top:19px;margin-bottom: 32px;text-align: center;}
+.load-more{color: #a4a4a4;margin-top:19px;margin-bottom: 32px;text-align: center;font-size: 16px;}
+.load-more img{vertical-align: middle;margin-left: 5px;}
 .share-box{float: right;}
 .share-wz{float: left;}
 .share-icons{float: left;}
@@ -822,7 +830,7 @@ color:#fff;
     margin-bottom: 23px;background: #fff;
     padding:22px;
 }
-.activity-bottom{background: #fff;padding:8px 0;}
+.activity-bottom{background: #fff;padding:8px 0 30px;position: relative;}
 .activity-bottom table{
     font-size: 16px;
 }
@@ -1077,6 +1085,12 @@ color:#fff;
 .duihuan-rule p{line-height: 20px;}
 .duihuan-rule h5{font-size: 14px;margin-bottom: 8px;color:#333;}
 .label-left{width: 87px;text-align: justify;color:#707070;font-size: 16px;float: left;}
+.icon-duihuanbg{
+    width: 83px;
+    height: 26px;
+    background: url(../img/icon-duihuanbg.png) no-repeat;
+    background-size: 100% 100%;
+}
 /* .label-left::after{
     display: inline-block;
     width: 100%;
@@ -1336,6 +1350,7 @@ color:#fff;
 .mine_detail{
     padding: 33px 21px 34px 23px;
     border:1px solid #E5E5E5;
+    position: relative;
 }
 
 .mine_user_info{
@@ -1358,7 +1373,7 @@ color:#fff;
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 50;
+    top: 50%;
     transform: translate(-50%,-50%);
 }
 
@@ -1459,7 +1474,15 @@ color:#fff;
     top:10px;
     left: -4px;
 }
-
+.qiandaoimg{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.tips img{
+    vertical-align: middle;
+    margin-left: 5px;
+}
 .mine_user_leve li .mine_user_num{
     height: 56px;
     line-height: 56px;
@@ -1534,7 +1557,6 @@ color:#fff;
 .mine_info .mine_nav{
     width: 210px;
     border-right: 1px solid #E5E5E5;
-    position: absolute;
     height: 100%;
 }
 .mine_info .mine_nav ul{
@@ -1575,7 +1597,15 @@ color:#fff;
     top:50%;
     margin-top: -8px;
 }
-
+/* 改成默认的图片 */
+.mine_info .mine_nav ul i.zy_def{
+    background: url(../img/zhuye.png) no-repeat 0 center;
+}
+/* 改成选中的图片 */
+.mine_info .mine_nav ul li.active i.zy_def{
+    background: url(../img/zhuyexuanzhong.png) no-repeat 0 center;
+    background-size: 16px;
+}
 .mine_info .mine_nav ul i.zy_def{
     background: url(../img/zhuye.png) no-repeat 0 center;
 }
