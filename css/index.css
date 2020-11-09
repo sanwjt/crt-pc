@@ -326,7 +326,7 @@ ul li{list-style: none;}
     padding:20px 20px 20px 14px;
     position: relative;
     overflow: hidden;
-    width: 1100px;
+    width: 1024px;
 }
 .icon-answer{position: absolute;right: 11px;top:11px;}
 .fankui-name{color: #757575;margin-bottom: 8px;}
@@ -335,7 +335,7 @@ ul li{list-style: none;}
 .answer-avtar{margin-right: 12px;}
 .answer-description{margin-bottom: 12px;}
 .fankui-answerfr{
-    width: 1100px;
+    width: 1024px;
     float: left;
 }
 .icon-question{
@@ -1235,6 +1235,17 @@ color:#fff;
 .dh-type{
     margin-top: 25px;
     font-size: 16px;
+}
+.dh-lingqian{
+    position: absolute;
+    height: 25px;
+    width: 83px;
+    top:-25px;
+    right: -75px;
+    background: url(../img/redbg.png) no-repeat center center;
+    background-size: cover;
+    color:#fff;
+    font-size: 10px;
 }
 
 .dh-type .dh-btn{
@@ -2220,7 +2231,7 @@ color:#fff;
 .page-listbox{position: absolute;right: 20px;bottom: 18px;}
 /* 分页 */
 .page-listbox li.page-active{color:#F68D3F;}
-.page-listbox li{float: left;color:#757575;margin-right: 10px;}
+.page-listbox li{float: left;color:#757575;margin-right: 27px;}
 
 /* 我的等级记录 */
 .dj-innerright .orign-num{color:#FF8721}
