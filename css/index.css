@@ -511,6 +511,10 @@ color:#fff;
     background: url(../img/sy-survy.png) no-repeat;
     background-size: cover;
 }
+.wenquaning-list1 li .wenquaning-item.wenquaning-yellow{
+    background: url(../img/sy-survyyellow.png) no-repeat;
+    background-size: cover;
+}
 .wenquaning-list1 li .wenquaning-item .dou_num{
     position: absolute;
     height: 33px;
@@ -530,14 +534,15 @@ color:#fff;
     position: absolute;
     right: 0;
     top:0;
-    width: 82px;
-    height: 82px;
+    width: 76px;
+    height: 76px;
 }
 .wenquaning-list1 li .wenquaning-item .shangye_tips img{
     width: 100%;
 }
 .wenquaning1-info{padding:34px 14px 20px;font-size: 18px;text-align: center;}
 /* 进行时2 */
+.icon_select{margin-right: 5px;}
 .wenquaning-list2 {text-align: left;margin-right: 16px;}
 .wenquaning-list2 li{
     width: 378px;
@@ -561,8 +566,10 @@ color:#fff;
 
 .wenquaning-right{
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: 0;
+    right: 10px;
+    width: 76px;
+    height: 76px;
 }
 .wenquaning-right img{
     width: 86px;
@@ -1061,9 +1068,20 @@ color:#fff;
     background: url(../img/jinrilingqubg.png) no-repeat;
     background-size: cover;
 }
-
-.qiandao-list li.noget .qiandao-bottom{
+.qiandao-list li.get {
+    background: url(../img/jinrilingqubged.png) no-repeat;
+    background-size: cover;
+}
+.qiandao-list li.get {
+    background: url(../img/jinrilingqubged.png) no-repeat;
+    background-size: cover;
+}
+.qiandao-list li.get .qiandao-bottom{
     background-color: #FF8721;
+
+}
+.qiandao-list li.noget .qiandao-bottom{
+    background-color: #E57E13;
 
 }
 .qiandao-list li .qiandao-jindou{

@@ -63,7 +63,12 @@
                                 <div class="pr">
                                     <div class="fl">
                              
-                                        <p><input type="checkbox"/>记住密码</p>
+                                        <p class="clearfix"> 
+                                            <label class="checklist iCheck">
+                                                <input class="checkbox" type="checkbox"/><span>记住密码</span>
+                                            </label>
+                                           
+                                        </p>
                                     </div>
                                     <div class="fr">
                                         <p>忘记密码</p>
@@ -211,6 +216,23 @@
         </ul>
         <div class="mt20">© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
     </div>
-</div>    
+</div>  
+<script src="js/jquery.min.js"></script>
+<script src="js/M_select.js"></script>  
+<script>
+    $(document).ready(function () {
+    //判断当前复选框状态，并让label背景图与复选框同步勾选或取消
+    $(".checkbox").click(function (){
+    //判断复选框勾选状态
+    if ($(this).is(':checked')) {
+    $("label").removeClass("iCheck");    //删除未勾选选背景图
+    $("label").addClass("iCheck-ed");    //添加勾选态背景图
+    }else{
+    $("label").removeClass("iCheck-ed"); //删除勾选选背景图
+    $("label").addClass("iCheck");       //添加未勾选选背景图
+    }
+    });
+    });
+</script>
 </body>
 </html>
