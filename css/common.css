@@ -104,6 +104,9 @@
 
 .footer_box{
     width: 100%;
+    padding-top: 61px;
+    padding-bottom: 20px;
+    color:#a4a4a4;
 }
 
 .footer{
@@ -365,6 +368,7 @@ color:#999;
     margin: 0 auto;
 }
 
+
 /* 广告 */
 
 .advert_box{
@@ -503,3 +507,13 @@ color:#999;
     background: url(../img/lineno.png) no-repeat center center;
     background-size: 100%;
 }
+
+/* 复选框自定义样式 Start */
+/* label 图片浮动，一般不浮动会显示不全 */
+.checklist{float:left;}
+/* checkbox 原复选框隐藏 */
+.checkbox{opacity:0;filter:alpha(opacity=0);}
+/* label 的背景图片 iCheck未选中 iCheck-ed选中 */
+.iCheck{background:url(../img/chk_bg1.png) no-repeat;background-size: 15px 15px;}
+.iCheck-ed{background:url(../img/chk_bg2.png) no-repeat;background-size: 15px 15px;}
+/* 复选框自定义样式 End */
