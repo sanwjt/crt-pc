@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-10 22:16:36
- * @LastEditTime: 2020-11-10 22:39:26
+ * @LastEditTime: 2020-11-10 22:52:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/js/number.js
@@ -95,7 +95,6 @@ window.onload=function(){
         var visibleTop = window.scrollY;
 
         var centerY = $("#count-number").offset().top + (itemDom.offsetHeight * 0.8);
-        // console.log(centerY);
         var show = centerY > visibleTop && centerY < visibleBottom;     
         if (show ) {
             if(num>0) return;
