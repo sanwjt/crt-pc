@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-10 16:08:02
- * @LastEditTime: 2020-11-08 21:47:43
+ * @LastEditTime: 2020-11-14 20:10:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/反馈提交.html
@@ -40,62 +40,65 @@
         </div>
     </div>
 
-    <!-- 内容 -->
-    <div class="main_box">
-        <div class="main">
-            <div class="fankui-banner"><img src="img/fankui-banner.png" alt=""></div>
-            <div class="fankui-content">
-                <div class="fankui-bread"><span  class="fankui-breadnow theme-color">我要反馈</span><span class="icon-cut">|</span><span>反馈记录</span></div>
+    <div class="containerbox">
+        <!-- 内容 -->
+        <div class="main_box">
+            <div class="main">
+                <div class="fankui-banner"><img src="img/fankui-banner.png" alt=""></div>
+                <div class="fankui-content">
+                    <div class="fankui-bread"><span  class="fankui-breadnow theme-color">我要反馈</span><span class="icon-cut">|</span><span>反馈记录</span></div>
 
-                <div style="margin-top: 40px;">
-                    <div class="select_label">发生问题日期: </div>
-                    <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker-day mt10">
-                        <!-- <i class="c-datepicker-range__icon kxiconfont icon-clock"></i> -->
-                        <input class="common_input" type="text" autocomplete="off" name="" placeholder="选择日期" class=" c-datepicker-data-input only-date" value="">
+                    <div style="margin-top: 40px;">
+                        <div class="select_label">发生问题日期: </div>
+                        <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker-day mt10">
+                            <!-- <i class="c-datepicker-range__icon kxiconfont icon-clock"></i> -->
+                            <input class="common_input" type="text" autocomplete="off" name="" placeholder="选择日期" class=" c-datepicker-data-input only-date" value="">
+                        </div>
+                    </div>
+
+                    <div class="fk_form" style="margin-top: 40px;">
+                        <div class="select_label">问题反馈类型: </div>
+                        <div style="display:inline-block;width: 499px;">
+                            <select class="select02" placeholder="请选择">
+                            <option value="01">男</option>
+                            <option value="02">女</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="fk_form" style="height: auto;">
+                        <div class="select_label">问题描述: </div>
+                        <div style="display:inline-block;width: 499px;">
+                            <textarea name="" id="" cols="30" rows="10" style="width: 100%;"></textarea>
+                            <p class="common_form_error" style="margin-top: -20px;">描述不能为空</p>
+                        </div>
+                    </div>
+                    
+                    <div class="fk_form" style="height: auto;">
+                        <div class="select_label">上传问题图片: </div>
+                        <div style="display:inline-block;width: 499px;">
+                            <input class="mb20" style="color:#707070;" type="file" placeholder="选择照片">
+                        </div>
                     </div>
                 </div>
 
-                <div class="fk_form" style="margin-top: 40px;">
-                    <div class="select_label">问题反馈类型: </div>
-                    <div style="display:inline-block;width: 499px;">
-                        <select class="select02" placeholder="请选择">
-                        <option value="01">男</option>
-                        <option value="02">女</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="fk_form" style="height: auto;">
-                    <div class="select_label">问题描述: </div>
-                    <div style="display:inline-block;width: 499px;">
-                        <textarea name="" id="" cols="30" rows="10" style="width: 100%;"></textarea>
-                        <p class="common_form_error" style="margin-top: -20px;">描述不能为空</p>
-                    </div>
-                </div>
-                
-                <div class="fk_form" style="height: auto;">
-                    <div class="select_label">上传问题图片: </div>
-                    <div style="display:inline-block;width: 499px;">
-                        <input class="mb20" style="color:#707070;" type="file" placeholder="选择照片">
-                    </div>
-                </div>
+                <div class="origin-btn" style="width:300px;margin:0 auto;margin-bottom:60px; margin-top:60px">提交反馈</div>
             </div>
-
-            <div class="origin-btn" style="width:300px;margin:0 auto;margin-bottom:60px; margin-top:60px">提交反馈</div>
         </div>
-    </div>
-      <!-- 底部 -->
-      <div class="footer_box">
-        <div class="footer mb20 footera4">
-            <ul>
-                <li>用户协议</li>
-                <li>隐私政策</li>
-                <li>联系我们</li>
-                <li>关注我们</li>
-                <li><img src="img/icon-sm-wb.png" alt="" class="icon-footer">微博</li>
-                <li><img src="img/icon-sm-wx.png" alt="" class="icon-footer">CTR调研社区</li>
-            </ul>
-            <div class="mt20">© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
+
+        <!-- 底部 -->
+        <div class="footer_box">
+            <div class="footer mb20 footera4">
+                <ul>
+                    <li>用户协议</li>
+                    <li>隐私政策</li>
+                    <li>联系我们</li>
+                    <li>关注我们</li>
+                    <li><img src="img/icon-sm-wb.png" alt="" class="icon-footer">微博</li>
+                    <li><img src="img/icon-sm-wx.png" alt="" class="icon-footer">CTR调研社区</li>
+                </ul>
+                <div class="mt20">© 2010-2019 央视市场研究股份有限公司版权所有京ICP备05036647号地址:北京市西城区德外大街5号TEL：010-62372627</div>
+            </div>
         </div>
     </div>
 
@@ -144,6 +147,5 @@
            })
         })
     </script>   
-    <script src="js/bottomnav.js"></script>        
 </body>
 </html>

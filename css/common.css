@@ -43,7 +43,6 @@
 .header_content .header_nav{
     display: inline-block;
     overflow: hidden;
-
     margin-bottom: 0;
     color: #333;
     vertical-align: middle;
@@ -86,9 +85,15 @@
 }
 
 
+.containerbox{
+    position: relative;
+    min-height:85%; 
+    padding-bottom: 140px;  
+    box-sizing: border-box;
+}
 .main_box{
     width: 100%;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .main_box .main{
@@ -97,16 +102,18 @@
     overflow: hidden;
 }
 
-.footer_box.fixedbottom{
+/* .footer_box.fixedbottom{
     position: fixed;
     bottom: 0;
-}
+} */
 
 .footer_box{
     width: 100%;
     padding-top: 61px;
     padding-bottom: 20px;
     color:#a4a4a4;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer{
