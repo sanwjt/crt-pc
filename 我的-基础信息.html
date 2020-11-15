@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 08:45:29
- * @LastEditTime: 2020-11-14 19:44:18
+ * @LastEditTime: 2020-11-15 12:19:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/我的.html
@@ -241,7 +241,10 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="select_label">滑块验证: </div>
+                                        <div class="select_label">
+                                            滑块验证:
+                                        </div>
+                                        <div class="verify-wrap" style="display:inline-block;width: 499px;"  id="verify-wrap2"></div>
                                     </li>
                                 </ul>
                                 <div class="origin-btn" style="width: 499px; margin: 0 auto;">
@@ -279,8 +282,15 @@
     <script src="js/datepicker.en.js"></script>
     <script src="js/M_select.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/jq-slideVerify.js" type="text/javascript" charset="utf-8"></script>
     <script>
       $(function(){
+        var SlideVerifyPlug = window.slideVerifyPlug;
+            var slideVerify2 = new SlideVerifyPlug('#verify-wrap2',{
+                    wrapWidth:'499',
+                    initText:'请按住滑块',
+                    sucessText:'验证通过',
+                });
         var mySwiper = new Swiper ('.swiper-container', {
         //   direction: 'vertical', // 垂直切换选项
           loop: true, // 循环模式选项

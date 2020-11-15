@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 08:45:29
- * @LastEditTime: 2020-11-14 19:36:45
+ * @LastEditTime: 2020-11-15 12:00:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/我的.html
@@ -152,21 +152,20 @@
                             <div class="qt_title oh">
                                 <span>私家车</span>
                                 <span class="color721">已完善</span>
-                                <span class="openclosebtn">展开</span>
+                                <span class="openclosebtn">取消</span>
                             </div>
 
-                            <div class="mine_content_inner" style="background-color: #F9F9F9; display: none;">
+                            <div class="mine_content_inner" style="background-color: #F9F9F9; display: block;">
                                 <div style="width: 718px; margin: 0 auto;">
                                     <div class="common_form_item mb20" style="display: inline-block;">
                                         <div class="common_form_label" style="width: 160px; text-align: right;display: inline-block;vertical-align: middle;">您家是否有私家车: </div>
                                         <div style="display:inline-block;width: 499px;vertical-align: middle;">
                                             <select class="select02" placeholder="请选择">
-                                            <option value="01">有私家车</option>
-                                            <option value="02">无私家车</option>
+                                                <option value="01">有私家车</option>
+                                                <option value="02">无私家车</option>
                                             </select>
                                         </div>
                                     </div>
-        
                                     <div class="common_form_item mb20">
                                         <div class="common_form_label" style="width: 160px; text-align: right;">您家的私家车品牌是:</div>
                                         <div class="pr dib">
@@ -197,14 +196,34 @@
                                     <span class="openclosebtn">展开</span>
                                 </div>
 
-                                <div class="mine_content_inner" style="background-color: #F9F9F9;display: none;">
+                                <div class="mine_content_inner" style="background-color: #F9F9F9;display: none; margin-bottom: 20px;">
                                     <i class="qt_tv_title">4.您家电视符合以下哪些情况？【可多选】</i>
                                     <div class="checkList">
-                                    <p><input type="checkbox" name="category" value="1" />可以通过连接网线或者wifi收看 </p>   
-                                    <p><input type="checkbox" name="category" value="2" />可以下载安装其他软件、APP </p>  
-                                    <p><input type="checkbox" name="category" value="2" />打开电视后，出来的不是电视频道，而是点播界面 </p>   
-                                    <p><input type="checkbox" name="category" value="2" />连接电视盒子收看 </p>    
-                                    <p><input type="checkbox" name="category" value="2" />以上都不符合 </p>    
+                                        <p class="clearfix">
+                                            <label class="checklist iCheck">
+                                                <input class="checkbox" type="checkbox"/><span>可以通过连接网线或者wifi收看</span>
+                                            </label>
+                                        </p>
+                                        <p class="clearfix">
+                                            <label class="checklist iCheck">
+                                                <input class="checkbox" type="checkbox"/><span>可以下载安装其他软件、APP</span>
+                                            </label>
+                                        </p>
+                                        <p class="clearfix">
+                                            <label class="checklist iCheck">
+                                                <input class="checkbox" type="checkbox"/><span>打开电视后，出来的不是电视频道，而是点播界面</span>
+                                            </label>
+                                        </p>
+                                        <p class="clearfix">
+                                            <label class="checklist iCheck">
+                                                <input class="checkbox" type="checkbox"/><span>连接电视盒子收看</span>
+                                            </label>
+                                        </p>
+                                        <p class="clearfix">
+                                            <label class="checklist iCheck">
+                                                <input class="checkbox" type="checkbox"/><span>以上都不符合</span>
+                                            </label>
+                                        </p>
                                     </div>
                                     <i class="qt_tv_title">5.您家智能电视品牌是？【可多选】</i>
                                     <ul class="qt_tv_list">
@@ -229,10 +248,11 @@
                                     <div class="common_form_label" style="width: 102px; text-align: right;">身份证人物照: </div>
                                     <div class="pr dib">
                                         <input class="mb20" style="color:#707070;" type="file" placeholder="选择照片">
+                                        <span class="color721 pa" style="font-size: 14px;width: 260px;height: 20px;bottom: 15px;left: 0;">*我们会添加水印加密存储，请放心</span>
                                     </div>
+
                                 </div>
                                 <div style="margin-left: 162px;">
-                                    <span class="color721" style="font-size: 14px; margin-bottom: 12px;display: block;">*我们会添加水印加密存储，请放心</span>
                                     <div class="origin-btn" style="width: 499px;">
                                         保存
                                     </div>
@@ -242,8 +262,8 @@
 
                             <div class="oh pr qt_switch">
                                 <span class="color333">是否愿意接受电话访问</span>
-                                <div class="switch_btn switch">
-                                    <div class="fl" style="display: none;">不愿意</div>
+                                <div class="switch_btn switch open">
+                                    <div class="fl">不愿意</div>
                                     <div class="fr">我愿意</div>
                                 </div>
                             </div>
@@ -252,7 +272,7 @@
                                 <span class="color333">是否愿意接受电话访问</span>
                                 <div class="switch_btn switch">
                                     <div class="fl">不愿意</div>
-                                    <div class="fr" style="display: none;">我愿意</div>
+                                    <div class="fr">我愿意</div>
                                 </div>
                             </div>
                         </div>
@@ -334,6 +354,26 @@
             $('.qt_tv_list li').on('click',function(){
                 $(this).addClass('active')
             });
+
+                //判断当前复选框状态，并让label背景图与复选框同步勾选或取消
+            $(".checkbox").click(function (){
+            //判断复选框勾选状态
+                if ($(this).is(':checked')) {
+                    $(this).parent().removeClass("iCheck");    //删除未勾选选背景图
+                   $(this).parent().addClass("iCheck-ed");    //添加勾选态背景图
+                }else{
+                   $(this).parent().removeClass("iCheck-ed"); //删除勾选选背景图
+                   $(this).parent().addClass("iCheck");       //添加未勾选选背景图
+                }
+            });
+
+            $('.switch').on('click',function(){
+                if(!$(this).hasClass('open')){
+                    $(this).addClass('open')
+                }else{
+                    $(this).removeClass('open')
+                }
+            })
         })
     </script>
     <script src="js/bottomnav.js"></script>      
