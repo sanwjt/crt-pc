@@ -40,6 +40,17 @@
 }
 .join_zp .join_zp_n td{
 	/* padding-bottom: 50px; */
+	border: 1px solid #FF8721;
+}
+
+.join_zp_c.border td{
+	border-top:1px solid #FF8721;
+}
+.join_zp_c.border td:first-child{
+	border-left: 1px solid #FF8721;
+}
+.join_zp_c.border  td:last-child{
+	border-right: 1px solid #FF8721;
 }
 .join_zp_n .join_ms{
 	width: 1175px;

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 08:45:29
- * @LastEditTime: 2020-11-15 12:00:54
+ * @LastEditTime: 2020-11-22 14:11:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/我的.html
@@ -200,27 +200,27 @@
                                     <i class="qt_tv_title">4.您家电视符合以下哪些情况？【可多选】</i>
                                     <div class="checkList">
                                         <p class="clearfix">
-                                            <label class="checklist iCheck">
+                                            <label class="checklist iCheck-ed">
                                                 <input class="checkbox" type="checkbox"/><span>可以通过连接网线或者wifi收看</span>
                                             </label>
                                         </p>
                                         <p class="clearfix">
-                                            <label class="checklist iCheck">
+                                            <label class="checklist iCheck-ed">
                                                 <input class="checkbox" type="checkbox"/><span>可以下载安装其他软件、APP</span>
                                             </label>
                                         </p>
                                         <p class="clearfix">
-                                            <label class="checklist iCheck">
+                                            <label class="checklist iCheck-ed">
                                                 <input class="checkbox" type="checkbox"/><span>打开电视后，出来的不是电视频道，而是点播界面</span>
                                             </label>
                                         </p>
                                         <p class="clearfix">
-                                            <label class="checklist iCheck">
+                                            <label class="checklist iCheck-ed">
                                                 <input class="checkbox" type="checkbox"/><span>连接电视盒子收看</span>
                                             </label>
                                         </p>
                                         <p class="clearfix">
-                                            <label class="checklist iCheck">
+                                            <label class="checklist iCheck-ed">
                                                 <input class="checkbox" type="checkbox"/><span>以上都不符合</span>
                                             </label>
                                         </p>
@@ -362,9 +362,11 @@
                     $(this).parent().removeClass("iCheck"); 
                     // $(this).css('color','#FF8721'); //删除未勾选选背景图
                     $(this).parent().addClass("iCheck-ed");    //添加勾选态背景图
+                    $(this).parent().removeClass('color721');
                 }else{
                    $(this).parent().removeClass("iCheck-ed"); //删除勾选选背景图
                    $(this).parent().addClass("iCheck");       //添加未勾选选背景图
+                   $(this).parent().addClass('color721');
                 }
             });
 

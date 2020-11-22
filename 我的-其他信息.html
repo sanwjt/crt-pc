@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-10-09 08:45:29
- * @LastEditTime: 2020-11-14 19:36:10
+ * @LastEditTime: 2020-11-22 14:17:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /crt-pc/我的.html
@@ -160,10 +160,12 @@
                                     <div class="mine_research_add">立即完善</div>
                                 </li>
                                 <li class="oh">
-                                    <span class="color333">是否愿意接受电话访问</span>
-                                    <div class="switch_btn">
-                                        <div class="fl">不愿意</div>
-                                        <div class="fr">我愿意</div>
+                                    <div class="oh pr qt_switch">
+                                        <span class="color333">是否愿意接受电话访问</span>
+                                        <div class="switch_btn switch">
+                                            <div class="fl">不愿意</div>
+                                            <div class="fr">我愿意</div>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -212,7 +214,15 @@
           scrollbar: {
             el: '.swiper-scrollbar',
           },
-        })    
+        });
+
+        $('.switch').on('click',function(){
+                if(!$(this).hasClass('open')){
+                    $(this).addClass('open')
+                }else{
+                    $(this).removeClass('open')
+                }
+            })
       })        
     </script>    
 </body>
